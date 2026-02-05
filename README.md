@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
@@ -20,7 +20,7 @@
   "@type": "LocalBusiness",
   "name": "Halı & Koltuk Yıkama",
   "image": "",
-  "telephone": "+905XXXXXXXXX",
+  "telephone": "+905362333675",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Ankara",
@@ -118,8 +118,8 @@ footer{
 <header>
     <h1>Halı & Koltuk Yıkama</h1>
     <p>Aynı Gün Servis • Yerinde Temizlik • Hijyen Garantisi</p>
-    <a class="btn call" href="tel:+905XXXXXXXXX">📞 Tıkla Ara</a>
-    <a class="btn whatsapp" href="https://wa.me/905XXXXXXXXX">💬 WhatsApp</a>
+    <a class="btn call" href="tel:+905362333675">📞 Tıkla Ara</a>
+    <a class="btn whatsapp" href="https://wa.me/905362333675">💬 WhatsApp</a>
 </header>
 
 <section>
@@ -140,13 +140,47 @@ footer{
 Endüstriyel makineler, antibakteriyel ürünler ve deneyimli ekip ile
 evinizde hijyenik temizlik sağlıyoruz. Google Harita üzerinden kolayca
 ulaşabilirsiniz.
+  
 </p>
 </div>
-
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Çankaya Halı Yıkama | Profesyonel Temizlik</title>
+<meta name="description" content="Çankaya halı yıkama hizmeti. Aynı gün servis, hijyenik temizlik.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial;background:#f4f6f8;margin:0}
+header{background:#0d6efd;color:#fff;padding:30px;text-align:center}
+section{max-width:900px;margin:auto;padding:20px}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,.1)}
+.btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#25d366;color:#fff;text-decoration:none;border-radius:30px;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>Çankaya Halı Yıkama</h1>
+<p>Aynı Gün Servis • Hijyenik Temizlik</p>
+</header>
+<section>
+<div class="card">
+<p>Çankaya bölgesinde profesyonel halı yıkama hizmeti sunuyoruz. Halılarınız adresinizden alınır, hijyenik şekilde yıkanır ve teslim edilir.</p>
+<ul>
+<li>✔ Halı Yıkama</li>
+<li>✔ Koltuk Yıkama</li>
+<li>✔ Yatak Yıkama</li>
+<li>✔ Leke & Koku Giderme</li>
+</ul>
+<a class="btn" href="tel:+905XXXXXXXXX">📞 Hemen Ara</a>
+</div>
+</section>
+</body>
+</html>
 <div class="card">
 <h2>İletişim</h2>
-<p><strong>Telefon:</strong> 05XX XXX XX XX</p>
-<p><strong>Hizmet Bölgesi:</strong> Ankara ve çevresi</p>
+<p><strong>Telefon:</strong> 05362333675</p>
+<p><strong>Hizmet Bölgesi:</strong> Ankara incek halı yıkama çayyolu halı yıkama etimesgut hatlı yıkama çayyolu halı yıkama bağlıca halı yıkama eryaman halı yıkama sincacan halı yıkama</p>
 </div>
 
 </section>
