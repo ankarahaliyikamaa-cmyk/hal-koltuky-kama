@@ -152,7 +152,7 @@ footer{
 .mobile-call{background:#fbbf24;color:#000}
 .mobile-wp{background:#22c55e;color:#fff}
 </style>
-</head>google-site-verification=nJ-0YXQZBJBUFTIokC0LaO63Xmlgt9BsqU9--lvBY2I
+</head>
 
 <body>
 
@@ -278,43 +278,4 @@ Ankara merkezli halı ve koltuk yıkama firmasıyız.
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade">
   </iframe>
-</div><script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CleaningService",
-  "name": "Yaprak Halı Yıkama",
-  "image": "https://yaprakhaliyikama.net/logo.png",
-  "@id": "https://yaprakhaliyikama.net",
-  "url": "https://yaprakhaliyikama.net",
-  "telephone": "+905362333675",
-  "priceRange": "₺₺",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ankara",
-    "addressRegion": "TR",
-    "addressCountry": "TR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 39.92077,
-    "longitude": 32.85411
-  },
-  "areaServed": [
-    "Çankaya",
-    "Ümitköy",
-    "Çayyolu",
-    "Etimesgut",
-    "İncek"
-  ],
-  "sameAs": [
-    "https://www.google.com/maps"
-  ]
-}
-</script><a href="tel:+905362333675" class="btn call">
-📞 Hemen Ara
-</a>
-
-<a href="https://wa.me/905362333675" target="_blank" class="btn whatsapp">
-💬 WhatsApp
-</a>
-
+</div>
