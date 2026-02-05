@@ -1,6 +1,5 @@
  www.yaprakhaliyikama.net
 
-
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -232,4 +231,38 @@ Ankara merkezli halı ve koltuk yıkama firmasıyız.
 Çankaya, İncek, Bağlıca, Etimesgut, Çayyolu ve Ümitköy bölgelerine hizmet vermekteyiz.
 </p>
 </body>
-</html>
+</html><!-- SEO META -->
+<title>Ankara Halı Yıkama | Çankaya • Etimesgut • Ümitköy</title>
+
+<meta name="description" content="Ankara profesyonel halı ve koltuk yıkama hizmeti. Çankaya, Ümitköy, Çayyolu, Etimesgut, İncek bölgelerine aynı gün servis. Tıkla ara.">
+<meta name="keywords" content="ankara halı yıkama, çankaya halı yıkama, etimesgut halı yıkama, ümitköy halı yıkama, koltuk yıkama ankara">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Yaprak Halı Yıkama">
+
+<!-- MOBİL -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CANONICAL -->
+<link rel="canonical" href="https://www.yaprakhaliyikama.net/">
+
+<!-- OPEN GRAPH (WhatsApp / Sosyal Medya) -->
+<meta property="og:title" content="Ankara Halı & Koltuk Yıkama | Yaprak Halı Yıkama">
+<meta property="og:description" content="Ankara genelinde profesyonel halı ve koltuk yıkama. Aynı gün servis.">
+<meta property="og:url" content="https://www.yaprakhaliyikama.net/">
+<meta property="og:type" content="website">
+<h2>Hizmet Verdiğimiz İlçeler</h2>
+
+<h3>Çankaya Halı Yıkama</h3>
+<p>Çankaya bölgesinde profesyonel halı ve koltuk yıkama hizmeti sunuyoruz.</p>
+
+<h3>Ümitköy Halı Yıkama</h3>
+<p>Ümitköy ve çevresine aynı gün servis.</p>
+
+<h3>Çayyolu Halı Yıkama</h3>
+<p>Çayyolu halı yıkama hizmeti hijyenik ve garantili.</p>
+
+<h3>Etimesgut Halı Yıkama</h3>
+<p>Etimesgut genelinde uygun fiyatlı halı yıkama.</p>
+
+<h3>İncek Halı Yıkama</h3>
+<p>İncek bölgesine hızlı servis.</p>
