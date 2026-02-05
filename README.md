@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Ankara Halı & Koltuk Yıkama | Çankaya, Ümitköy, Etimesgut</title>
+  <title>Ankara Halı & Koltuk Yıkama | Çankaya, Ümitköy, Etimesgut, Sincan</title>
 
   <!-- Google Search Console -->
   <meta name="google-site-verification"
@@ -12,8 +12,9 @@
 
   <!-- SEO -->
   <meta name="description"
-        content="Ankara halı yıkama ve koltuk yıkama hizmeti. Çankaya, Ümitköy, Etimesgut, İncek, Bağlıca, Çayyolu bölgelerinde adresinizden alım–teslim. Hızlı servis, hijyenik yıkama." />
+        content="Ankara halı yıkama ve koltuk yıkama hizmeti. Çankaya, Ümitköy, Etimesgut, Sincan, İncek, Bağlıca, Çayyolu bölgelerinde adresten alım–teslim. Hızlı servis, hijyenik yıkama, leke & koku giderme." />
 
+  <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,6 +30,7 @@
       "Çankaya",
       "Ümitköy",
       "Etimesgut",
+      "Sincan",
       "İncek",
       "Bağlıca",
       "Çayyolu"
@@ -54,16 +56,16 @@
       font-family: Arial, Helvetica, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.55;
+      line-height: 1.6;
     }
     header{
       background: linear-gradient(135deg,#111827,#2563eb);
       color:#fff;
-      padding: 22px 14px;
+      padding: 24px 14px;
       text-align:center;
     }
     header h1{margin:0;font-size:26px}
-    header p{margin:8px 0 0;color:rgba(255,255,255,.85)}
+    header p{margin:10px 0 0;color:rgba(255,255,255,.88)}
     .container{
       max-width: 980px;
       margin: 0 auto;
@@ -130,9 +132,8 @@
     ul{
       margin:10px 0 0;
       padding-left: 18px;
-      color: var(--text);
     }
-    li{ margin: 6px 0; }
+    li{ margin: 7px 0; }
     .map-wrap{
       overflow:hidden;
       border-radius: var(--radius);
@@ -153,13 +154,45 @@
     footer{
       text-align:center;
       color: var(--muted);
-      padding: 22px 10px 80px;
+      padding: 22px 10px 90px;
       font-size: 13px;
     }
     .small{
       color: var(--muted);
       font-size: 14px;
       margin-top: 6px;
+    }
+    .cta-bar{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top: 12px;
+    }
+    .cta-bar a{flex:1}
+    details{
+      background:#fff;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      margin: 10px 0;
+    }
+    summary{
+      cursor:pointer;
+      font-weight: 800;
+    }
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top: 10px;
+    }
+    .chip{
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      padding:6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color:#0f172a;
     }
   </style>
 </head>
@@ -168,7 +201,7 @@
 
   <header>
     <h1>Ankara Halı & Koltuk Yıkama</h1>
-    <p>Çankaya • Ümitköy • Etimesgut • İncek • Bağlıca • Çayyolu</p>
+    <p>Çankaya • Ümitköy • Etimesgut • Sincan • İncek • Bağlıca • Çayyolu</p>
   </header>
 
   <div class="container">
@@ -177,6 +210,7 @@
       <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
       <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
     </div>
+
     <div class="note">
       Hızlı randevu • Adresten alım–teslim • Hijyenik yıkama • Leke & koku giderme
     </div>
@@ -197,6 +231,10 @@
       <p class="small">
         Randevu oluşturduktan sonra halılarınız adresinizden alınır, profesyonel yıkama sonrası kurutulup paketlenir ve tekrar teslim edilir.
       </p>
+      <div class="cta-bar">
+        <a class="btn btn-call" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
+        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp’tan Yaz</a>
+      </div>
     </div>
 
     <div class="card">
@@ -208,6 +246,48 @@
         <li><b>Durulama:</b> Köpük kalmayacak şekilde bol su ile durulanır.</li>
         <li><b>Sıkma & kurutma:</b> Santrifüj sıkma ile su atılır, kontrollü ortamda kurutulur.</li>
         <li><b>Paketleme & teslim:</b> Hijyenik şekilde paketlenip randevunuza göre teslim edilir.</li>
+      </ul>
+      <p class="small">
+        Not: Yün ve hassas halılarda daha nazik ürünler ve düşük devir fırçalama uygulanır.
+      </p>
+    </div>
+
+    <!-- YENİ: Neden Biz? -->
+    <div class="card">
+      <h2>Neden Bizi Tercih Etmelisiniz?</h2>
+      <ul>
+        <li><b>Kalıntısız durulama:</b> Halıda şampuan kalmaz, sertleşme ve koku riski azalır.</li>
+        <li><b>Derin temizlik:</b> Toz alma + fırçalama ile yüzey değil, dipteki kir hedeflenir.</li>
+        <li><b>Kontrollü kurutma:</b> Nem bırakmadan teslim etmeye özen gösteririz.</li>
+        <li><b>Randevulu alım–teslim:</b> Zamanınızı bölmeden hızlı servis sağlarız.</li>
+      </ul>
+    </div>
+
+    <!-- YENİ: Hizmetler -->
+    <div class="card">
+      <h2>Hizmetlerimiz</h2>
+      <div class="chips">
+        <span class="chip">Halı Yıkama</span>
+        <span class="chip">Koltuk Yıkama</span>
+        <span class="chip">Yatak Yıkama</span>
+        <span class="chip">Sandalye / Kanepe</span>
+        <span class="chip">Leke & Koku Giderme</span>
+        <span class="chip">Yerinde Temizlik</span>
+      </div>
+      <p class="small">
+        WhatsApp’tan halı türü (shaggy, yün, ipek, makine halısı) ve ölçü/adet gönderirseniz hızlı fiyat verebiliriz.
+      </p>
+    </div>
+
+    <!-- YENİ: Fiyatı Etkileyenler -->
+    <div class="card">
+      <h2>Fiyatı Neler Etkiler?</h2>
+      <ul>
+        <li>Halı türü (shaggy, yün, el dokuma vb.)</li>
+        <li>Metrekare ve adet</li>
+        <li>Leke yoğunluğu (çay, kahve, mürekkep vb.)</li>
+        <li>Koku problemi (evcil hayvan, rutubet)</li>
+        <li>Alım–teslim mesafesi ve randevu yoğunluğu</li>
       </ul>
     </div>
 
@@ -257,6 +337,20 @@
           </p>
         </div>
 
+        <!-- ✅ SİNCAN EKLENDİ -->
+        <div class="card" style="margin:0;">
+          <span class="badge">Sincan Halı Yıkama</span>
+          <h2>Sincan’da Halı Yıkama</h2>
+          <p>
+            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</b>dır. Halının diplerinde biriken toz ve kum
+            alınmadan yapılan yıkama, kirin halıya daha çok işlemesine sebep olabilir. Bu yüzden önce tozu tamamen çıkarırız.
+          </p>
+          <p>
+            Ardından halı dokusuna uygun ürünlerle <b>şampuanlama ve fırçalama</b> yapılır, leke durumuna göre noktasal işlem uygulanır.
+            Bol su ile durulama sonrası halılar <b>santrifüj sıkma</b> ile sudan arındırılır, kontrollü ortamda kurutulur ve paketlenerek teslim edilir.
+          </p>
+        </div>
+
         <div class="card" style="margin:0;">
           <span class="badge">İncek Halı Yıkama</span>
           <h2>İncek’te Halı Yıkama</h2>
@@ -297,6 +391,46 @@
         </div>
 
       </div>
+    </div>
+
+    <!-- YENİ: Randevu Akışı -->
+    <div class="card">
+      <h2>Randevu Nasıl Alınır?</h2>
+      <ul>
+        <li><b>1)</b> WhatsApp’tan yazın ya da arayın.</li>
+        <li><b>2)</b> Halı türü + yaklaşık ölçü/adet bilgisini paylaşın.</li>
+        <li><b>3)</b> Uygun gün/saat için randevu oluşturalım.</li>
+        <li><b>4)</b> Alım–yıkama–kurutma–teslim süreci tamamlanır.</li>
+      </ul>
+      <div class="cta-bar">
+        <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- YENİ: SSS -->
+    <div class="card">
+      <h2>Sık Sorulan Sorular</h2>
+
+      <details>
+        <summary>Halılar kaç günde teslim edilir?</summary>
+        <p class="small">Yoğunluğa göre değişir. Genelde yıkama + kurutma sonrası en kısa sürede teslim edilir. Net süre için arayın/yazın.</p>
+      </details>
+
+      <details>
+        <summary>Halı yıkamada koku kalır mı?</summary>
+        <p class="small">Kalıntısız durulama ve doğru kurutma yapıldığında koku problemi büyük ölçüde çözülür. Evcil hayvan kokusunda ekstra işlem uygulanabilir.</p>
+      </details>
+
+      <details>
+        <summary>Yün veya hassas halı yıkıyor musunuz?</summary>
+        <p class="small">Evet. Halı tipine uygun ürün ve daha nazik fırçalama ile işlem yapılır.</p>
+      </details>
+
+      <details>
+        <summary>Fiyatı hızlı nasıl öğrenebilirim?</summary>
+        <p class="small">WhatsApp’tan halı türü ve ölçü/adet bilgisi gönderin; en hızlı şekilde dönüş yapalım.</p>
+      </details>
     </div>
 
     <div class="card">
