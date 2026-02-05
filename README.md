@@ -1,218 +1,126 @@
-
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>Profesyonel Halı & Koltuk Yıkama | Aynı Gün Servis</title>
-
+<title>Ankara Halı & Koltuk Yıkama | Yerinde Temizlik</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Profesyonel halı ve koltuk yıkama hizmeti. Aynı gün servis, hijyenik temizlik, uygun fiyat. Hemen arayın.">
+<meta name="description" content="Ankara halı ve koltuk yıkama hizmeti. Çankaya, İncek, Bağlıca, Etimesgut, Çayyolu, Ümitköy. Aynı gün servis.">
 
-<!-- GOOGLE MAPS SEO -->
-<meta name="geo.region" content="TR">
-<meta name="geo.placename" content="ANKARA">
-<meta name="geo.position" content="39.9334;32.8597">
-<meta name="ICBM" content="39.9334, 32.8597">
-
-<!-- STRUCTURED DATA -->
+<!-- LOCAL SEO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Halı & Koltuk Yıkama",
-  "image": "",
+  "name": "Ankara Halı & Koltuk Yıkama",
   "telephone": "+905362333675",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Ankara",
     "addressCountry": "TR"
   },
-  "areaServed": "Ankara",
-  "url": "https://siteadresin.com"
+  "areaServed": [
+    "Çankaya","İncek","Bağlıca","Etimesgut","Çayyolu","Ümitköy"
+  ]
 }
 </script>
 
 <style>
+*{box-sizing:border-box}
 body{
-    margin:0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background:#f4f6f8;
-    color:#333;
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  background:#f1f3f6;
+  color:#222;
 }
 header{
-    background:linear-gradient(135deg,#0d6efd,#0a58ca);
-    color:#fff;
-    padding:50px 20px;
-    text-align:center;
+  background:linear-gradient(135deg,#111827,#2563eb);
+  color:#fff;
+  padding:60px 20px;
+  text-align:center;
 }
-header h1{
-    margin:0;
-    font-size:32px;
+header h1{margin:0;font-size:34px}
+header p{opacity:.9;margin:15px 0 30px}
+
+.actions{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
 }
-header p{
-    margin:10px 0 25px;
-    font-size:18px;
+.action-btn{
+  padding:15px 28px;
+  border-radius:50px;
+  font-weight:600;
+  text-decoration:none;
+  font-size:17px;
 }
-.btn{
-    display:inline-block;
-    padding:14px 26px;
-    border-radius:40px;
-    text-decoration:none;
-    font-weight:600;
-    margin:5px;
-}
-.call{
-    background:#ffc107;
-    color:#000;
-}
-.whatsapp{
-    background:#25d366;
-    color:#fff;
-}
+.call{background:#fbbf24;color:#000}
+.wp{background:#22c55e;color:#fff}
+
 section{
-    max-width:1000px;
-    margin:auto;
-    padding:30px 20px;
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
 }
 .card{
-    background:#fff;
-    border-radius:12px;
-    padding:25px;
-    margin-bottom:20px;
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
+  background:#fff;
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+  margin-bottom:40px;
 }
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+
+.districts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:16px;
 }
+.district{
+  padding:18px;
+  border-radius:14px;
+  background:#f9fafb;
+  text-align:center;
+  cursor:pointer;
+  font-weight:600;
+  transition:.2s;
+}
+.district:hover{
+  background:#2563eb;
+  color:#fff;
+}
+
+#districtContent{
+  margin-top:30px;
+  display:none;
+}
+
 footer{
-    background:#111;
-    color:#aaa;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
+  background:#0f172a;
+  color:#9ca3af;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
 }
-.fixed-bar{
-    position:fixed;
-    bottom:0;
-    left:0;
-    right:0;
-    background:#fff;
-    display:flex;
-    box-shadow:0 -5px 15px rgba(0,0,0,.1);
+
+/* MOBILE BAR */
+.mobile-bar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  display:flex;
+  z-index:10;
 }
-.fixed-bar a{
-    flex:1;
-    padding:15px;
-    text-align:center;
-    text-decoration:none;
-    font-weight:bold;
+.mobile-bar a{
+  flex:1;
+  padding:16px;
+  text-align:center;
+  font-weight:700;
+  text-decoration:none;
 }
-.fixed-call{background:#ffc107;color:#000;}
-.fixed-wp{background:#25d366;color:#fff;}
+.mobile-call{background:#fbbf24;color:#000}
+.mobile-wp{background:#22c55e;color:#fff}
 </style>
-</head>
-
-<body>
-
-<header>
-    <h1>Halı & Koltuk Yıkama</h1>
-    <p>Aynı Gün Servis • Yerinde Temizlik • Hijyen Garantisi</p>
-    <a class="btn call" href="tel:+905362333675">📞 Tıkla Ara</a>
-    <a class="btn whatsapp" href="https://wa.me/905362333675">💬 WhatsApp</a>
-</header>
-
-<section>
-
-<div class="card">
-<h2>Hizmetlerimiz</h2>
-<div class="grid">
-    <div>✔ Halı Yıkama</div>
-    <div>✔ Koltuk Yıkama</div>
-    <div>✔ Yatak Yıkama</div>
-    <div>✔ Araç Koltuğu</div>
-</div>
-</div>
-
-<div class="card">
-<h2>Neden Bizi Tercih Etmelisiniz?</h2>
-<p>
-Endüstriyel makineler, antibakteriyel ürünler ve deneyimli ekip ile
-evinizde hijyenik temizlik sağlıyoruz. Google Harita üzerinden kolayca
-ulaşabilirsiniz.
- <!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <title>Ankara Halı & Koltuk Yıkama | Çankaya - Etimesgut</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ankara halı ve koltuk yıkama hizmeti. Çankaya, İncek, Bağlıca, Etimesgut, Çayyolu, Ümitköy. Aynı gün servis.">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #333;
-    }
-    header {
-      background: #0a7cff;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px 0;
-    }
-    .btn {
-      text-decoration: none;
-      color: #fff;
-      padding: 15px 25px;
-      border-radius: 8px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    .call {
-      background: #28a745;
-    }
-    .whatsapp {
-      background: #25d366;
-    }
-    .districts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      margin-top: 30px;
-    }
-    .district {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .district a {
-      text-decoration: none;
-      color: #0a7cff;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-      background: #eee;
-      font-size: 14px;
-    }
-  </style>
 </head>
 
 <body>
@@ -220,99 +128,73 @@ ulaşabilirsiniz.
 <header>
   <h1>Ankara Halı & Koltuk Yıkama</h1>
   <p>Profesyonel • Hijyenik • Aynı Gün Servis</p>
+  <div class="actions">
+    <a class="action-btn call" href="tel:+905362333675">📞 Tıkla Ara</a>
+    <a class="action-btn wp" href="https://wa.me/905362333675">💬 WhatsApp</a>
+  </div>
 </header>
 
-<div class="container">
-
-  <div class="buttons">
-    <a class="btn call" href="tel:+905362333675">📞 Tıkla Ara</a>
-    <a class="btn whatsapp" href="https://wa.me/905362333675" target="_blank">💬 WhatsApp</a>
-  </div>
-
-  <h2>Hizmet Verdiğimiz İlçeler</h2>
-
-  <div class="districts">
-    <div class="district">
-      <a href="cankaya.html" target="_blank">Çankaya</a>
-    </div>
-    <div class="district">
-      <a href="incek.html" target="_blank">İncek</a>
-    </div>
-    <div class="district">
-      <a href="baglica.html" target="_blank">Bağlıca</a>
-    </div>
-    <div class="district">
-      <a href="etimesgut.html" target="_blank">Etimesgut</a>
-    </div>
-    <div class="district">
-      <a href="cayyolu.html" target="_blank">Çayyolu</a>
-    </div>
-    <div class="district">
-      <a href="umitkoy.html" target="_blank">Ümitköy</a>
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  © 2026 Ankara Halı & Koltuk Yıkama | Tel: 0536 233 36 75
-</footer>
-
-</body>
-</html> 
-</p>
-</div>
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>Çankaya Halı Yıkama | Profesyonel Temizlik</title>
-<meta name="description" content="Çankaya halı yıkama hizmeti. Aynı gün servis, hijyenik temizlik.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body{font-family:Arial;background:#f4f6f8;margin:0}
-header{background:#0d6efd;color:#fff;padding:30px;text-align:center}
-section{max-width:900px;margin:auto;padding:20px}
-.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,.1)}
-.btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#25d366;color:#fff;text-decoration:none;border-radius:30px;font-weight:bold}
-</style>
-</head>
-<body>
-<header>
-<h1>Çankaya Halı Yıkama</h1>
-<p>Aynı Gün Servis • Hijyenik Temizlik</p>
-</header>
 <section>
+
 <div class="card">
-<p>Çankaya bölgesinde profesyonel halı yıkama hizmeti sunuyoruz. Halılarınız adresinizden alınır, hijyenik şekilde yıkanır ve teslim edilir.</p>
-<ul>
-<li>✔ Halı Yıkama</li>
-<li>✔ Koltuk Yıkama</li>
-<li>✔ Yatak Yıkama</li>
-<li>✔ Leke & Koku Giderme</li>
-</ul>
-<a class="btn" href="tel:+905XXXXXXXXX">📞 Hemen Ara</a>
+<h2>Hizmet Verdiğimiz Bölgeler</h2>
+<p>İlçeye tıklayın, detayları hemen görün.</p>
+
+<div class="districts">
+  <div class="district" onclick="showDistrict('Çankaya')">Çankaya</div>
+  <div class="district" onclick="showDistrict('İncek')">İncek</div>
+  <div class="district" onclick="showDistrict('Bağlıca')">Bağlıca</div>
+  <div class="district" onclick="showDistrict('Etimesgut')">Etimesgut</div>
+  <div class="district" onclick="showDistrict('Çayyolu')">Çayyolu</div>
+  <div class="district" onclick="showDistrict('Ümitköy')">Ümitköy</div>
 </div>
-</section>
-</body>
-</html>
+
+<div id="districtContent" class="card"></div>
+</div>
+
 <div class="card">
-<h2>İletişim</h2>
-<p><strong>Telefon:</strong> 05362333675</p>
-<p><strong>Hizmet Bölgesi:</strong> Ankara incek halı yıkama çayyolu halı yıkama etimesgut hatlı yıkama çayyolu halı yıkama bağlıca halı yıkama eryaman halı yıkama sincacan halı yıkama</p>
+<h2>Neden Bizi Seçmelisiniz?</h2>
+<ul>
+  <li>✔ Endüstriyel makineler</li>
+  <li>✔ Antibakteriyel temizlik</li>
+  <li>✔ Yerinde alım & teslim</li>
+  <li>✔ Uygun fiyat – hızlı servis</li>
+</ul>
 </div>
 
 </section>
 
 <footer>
-© 2026 Halı & Koltuk Yıkama • Tüm Hakları Saklıdır
+© 2026 Ankara Halı & Koltuk Yıkama • 0536 233 36 75
 </footer>
 
-<!-- MOBIL SABIT BUTON -->
-<div class="fixed-bar">
-    <a class="fixed-call" href="tel:+905XXXXXXXXX">📞 Ara</a>
-    <a class="fixed-wp" href="https://wa.me/905XXXXXXXXX">💬 WhatsApp</a>
+<div class="mobile-bar">
+  <a class="mobile-call" href="tel:+905362333675">📞 Ara</a>
+  <a class="mobile-wp" href="https://wa.me/905362333675">💬 WhatsApp</a>
 </div>
+
+<script>
+function showDistrict(name){
+  const content = `
+    <h3>${name} Halı & Koltuk Yıkama</h3>
+    <p>
+      ${name} bölgesinde profesyonel halı ve koltuk yıkama hizmeti sunuyoruz.
+      Halılarınız adresinizden alınır, hijyenik şekilde yıkanır ve teslim edilir.
+    </p>
+    <ul>
+      <li>✔ Halı Yıkama</li>
+      <li>✔ Koltuk Yıkama</li>
+      <li>✔ Yatak Yıkama</li>
+      <li>✔ Leke & Koku Giderme</li>
+    </ul>
+    <a class="action-btn wp" href="https://wa.me/905362333675">💬 WhatsApp’tan Yaz</a>
+  `;
+  const box = document.getElementById("districtContent");
+  box.innerHTML = content;
+  box.style.display = "block";
+  box.scrollIntoView({behavior:"smooth"});
+}
+</script>
 
 </body>
 </html>
