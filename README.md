@@ -1,4 +1,4 @@
-CNAME www.yaprakhaliyikama.net
+ www.yaprakhaliyikama.net
 
 
 <html lang="tr">
