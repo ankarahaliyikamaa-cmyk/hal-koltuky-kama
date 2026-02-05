@@ -1,4 +1,4 @@
- www.yaprakhaliyikama.net
+  www.yaprakhaliyikama.net
 
 <html lang="tr">
 <head>
@@ -266,3 +266,16 @@ Ankara merkezli halı ve koltuk yıkama firmasıyız.
 
 <h3>İncek Halı Yıkama</h3>
 <p>İncek bölgesine hızlı servis.</p>
+<h2>Hizmet Bölgemiz</h2>
+
+<div style="width:100%; max-width:900px; margin:auto;">
+  <iframe
+    src="https://www.google.com/maps?q=Ankara%20Yaprak%20Halı%20Yıkama&output=embed"
+    width="100%"
+    height="350"
+    style="border:0; border-radius:12px;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
