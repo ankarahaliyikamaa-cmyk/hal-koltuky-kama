@@ -310,5 +310,11 @@ Ankara merkezli halı ve koltuk yıkama firmasıyız.
     "https://www.google.com/maps"
   ]
 }
-</script>
+</script><a href="tel:+905362333675" class="btn call">
+📞 Hemen Ara
+</a>
+
+<a href="https://wa.me/905362333675" target="_blank" class="btn whatsapp">
+💬 WhatsApp
+</a>
 
