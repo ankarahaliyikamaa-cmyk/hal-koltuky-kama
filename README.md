@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +8,7 @@
   <title>Ankara Halı & Koltuk Yıkama | Çankaya, Ümitköy, Etimesgut, Sincan</title>
 
   <!-- Google Search Console -->
- <meta name="google-site-verification" content="p6C1SKYZ9hB3r5kp9j9GsxUn48lJKgUAurSogbpipDk" />
+  <meta name="google-site-verification" content="p6C1SKYZ9hB3r5kp9j9GsxUn48lJKgUAurSogbpipDk" />
 
   <!-- SEO -->
   <meta name="description"
