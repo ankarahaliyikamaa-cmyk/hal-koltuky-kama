@@ -1,3 +1,4 @@
+CNAME yaprakhaliyikama.net
 
 
 <html lang="tr">
