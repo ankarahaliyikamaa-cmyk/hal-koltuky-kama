@@ -12,7 +12,7 @@
 
   <!-- SEO -->
   <meta name="description"
-        content="Ankara halı yıkama ve koltuk yıkama hizmeti. Çankaya, Ümitköy, Etimesgut, Sincan, İncek, Bağlıca, Çayyolu bölgelerinde adresten alım–teslim, yerinde koltuk yıkama. Hızlı servis, hijyenik temizlik, leke & koku giderme." />
+        content="Ankara halı yıkama ve koltuk yıkama hizmeti. Çankaya, Ümitköy, Etimesgut, Sincan, İncek, Bağlıca, Çayyolu bölgelerinde adresten alım–teslim. Hızlı servis, hijyenik yıkama, leke & koku giderme." />
 
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
@@ -35,11 +35,7 @@
       "Bağlıca",
       "Çayyolu"
     ],
-    "url": "https://www.yaprakhaliyikama.net",
-    "makesOffer": [
-      { "@type": "Offer", "name": "Halı Yıkama" },
-      { "@type": "Offer", "name": "Koltuk Yıkama" }
-    ]
+    "url": "https://www.yaprakhaliyikama.net"
   }
   </script>
 
@@ -52,11 +48,9 @@
       --blue:#2563eb;
       --green:#25D366;
       --shadow: 0 10px 25px rgba(0,0,0,.08);
-      --shadow2: 0 12px 30px rgba(0,0,0,.18);
       --radius: 16px;
     }
     *{box-sizing:border-box}
-    html{scroll-behavior:smooth;}
     body{
       margin:0;
       font-family: Arial, Helvetica, sans-serif;
@@ -77,8 +71,6 @@
       margin: 0 auto;
       padding: 16px;
     }
-
-    /* Üst Aksiyon Butonları */
     .actions{
       display:flex;
       gap:12px;
@@ -101,42 +93,6 @@
     }
     .btn-call{background: var(--blue);}
     .btn-wa{background: var(--green);}
-
-    /* ✅ Hızlı Menü */
-    .quickmenu-wrap{
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(245,245,245,.92);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid rgba(0,0,0,.06);
-    }
-    .quickmenu{
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 10px 16px;
-      display:flex;
-      gap:10px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-    .qbtn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      text-decoration:none;
-      font-weight: 800;
-      font-size: 14px;
-      color:#111827;
-      background:#ffffff;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(0,0,0,.06);
-    }
-    .qbtn:hover{box-shadow: var(--shadow2);}
-
     .note{
       text-align:center;
       color: var(--muted);
@@ -194,7 +150,6 @@
       font-weight: 800;
       text-decoration:none;
       box-shadow: 0 10px 25px rgba(0,0,0,.22);
-      z-index: 60;
     }
     footer{
       text-align:center;
@@ -239,19 +194,6 @@
       font-size: 13px;
       color:#0f172a;
     }
-    .section-title{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-    .section-title a{
-      text-decoration:none;
-      font-weight:800;
-      color: var(--blue);
-      font-size: 14px;
-    }
   </style>
 </head>
 
@@ -262,16 +204,6 @@
     <p>Çankaya • Ümitköy • Etimesgut • Sincan • İncek • Bağlıca • Çayyolu</p>
   </header>
 
-  <!-- ✅ HIZLI MENÜ (yeni) -->
-  <div class="quickmenu-wrap">
-    <div class="quickmenu">
-      <a class="qbtn" href="#hali">🧼 Halı Yıkama</a>
-      <a class="qbtn" href="#koltuk">🛋️ Koltuk Yıkama</a>
-      <a class="qbtn" href="#bolgeler">📍 Bölgeler</a>
-      <a class="qbtn" href="#iletisim">☎️ İletişim</a>
-    </div>
-  </div>
-
   <div class="container">
 
     <div class="actions">
@@ -280,10 +212,10 @@
     </div>
 
     <div class="note">
-      Hızlı randevu • Adresten alım–teslim • Yerinde koltuk yıkama • Hijyenik temizlik • Leke & koku giderme
+      Hızlı randevu • Adresten alım–teslim • Hijyenik yıkama • Leke & koku giderme
     </div>
 
-    <div class="card" id="bolgeler">
+    <div class="card">
       <span class="badge">Hizmet Bölgemiz</span>
       <div class="map-wrap">
         <iframe
@@ -297,7 +229,7 @@
         </iframe>
       </div>
       <p class="small">
-        Halılarınızı adresinizden alırız; koltuk yıkamayı ise çoğu zaman <b>yerinde</b> yaparız. Randevu ile hızlı servis sağlıyoruz.
+        Randevu oluşturduktan sonra halılarınız adresinizden alınır, profesyonel yıkama sonrası kurutulup paketlenir ve tekrar teslim edilir.
       </p>
       <div class="cta-bar">
         <a class="btn btn-call" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
@@ -305,20 +237,8 @@
       </div>
     </div>
 
-    <!-- =========================
-         HALI YIKAMA
-    ========================== -->
-    <div class="card" id="hali">
-      <div class="section-title">
-        <h2>Halı Yıkama</h2>
-        <a href="#koltuk">Koltuk Yıkama bölümüne git ↓</a>
-      </div>
-
-      <p class="small">
-        Halı yıkamada hedefimiz: halının dokusunu yıpratmadan, dipte biriken tozu çıkarıp kalıntısız durulama ile hijyen sağlamaktır.
-      </p>
-
-      <h3 style="margin:10px 0 0;">Halı Yıkama Sürecimiz</h3>
+    <div class="card">
+      <h2>Halı Yıkama Sürecimiz</h2>
       <ul>
         <li><b>Ön kontrol:</b> Halı tipi, leke ve koku durumu kontrol edilir.</li>
         <li><b>Toz alma:</b> Halının derinine işlemiş toz ve kum özel makinelerle alınır.</li>
@@ -328,56 +248,196 @@
         <li><b>Paketleme & teslim:</b> Hijyenik şekilde paketlenip randevunuza göre teslim edilir.</li>
       </ul>
       <p class="small">
-        Yün ve hassas halılarda daha nazik ürünler ve düşük devir uygulama tercih ederiz.
+        Not: Yün ve hassas halılarda daha nazik ürünler ve düşük devir fırçalama uygulanır.
       </p>
     </div>
 
-    <!-- =========================
-         KOLTUK YIKAMA
-    ========================== -->
-    <div class="card" id="koltuk">
-      <div class="section-title">
-        <h2>Koltuk Yıkama</h2>
-        <a href="#hali">Halı Yıkama bölümüne git ↑</a>
-      </div>
-
-      <p class="small">
-        Koltuk yıkamada önemli olan, kumaşı ıslatıp bırakmak değil; <b>derinlemesine temizleyip</b> kirli suyu geri çekerek
-        hem lekeyi hem kokuyu azaltmaktır. Genelde koltuk yıkama hizmetini <b>yerinde</b> uygularız.
-      </p>
-
-      <h3 style="margin:10px 0 0;">Koltuk Yıkama Sürecimiz</h3>
+    <!-- YENİ: Neden Biz? -->
+    <div class="card">
+      <h2>Neden Bizi Tercih Etmelisiniz?</h2>
       <ul>
-        <li><b>Ön inceleme:</b> Kumaş türü ve leke yoğunluğu kontrol edilir.</li>
-        <li><b>Toz & kırıntı alma:</b> Yüzeydeki kaba kirler alınır.</li>
-        <li><b>Uygun ürün seçimi:</b> Kumaşa zarar vermeyen ürünler tercih edilir.</li>
-        <li><b>Fırçalama:</b> Lekeli bölgeler nazikçe fırçalanır.</li>
-        <li><b>Ekstraksiyon (çekim):</b> Kirli su güçlü vakumla geri çekilir.</li>
-        <li><b>Koku & hijyen:</b> İhtiyaca göre koku giderme uygulanır.</li>
-        <li><b>Hızlı kuruma:</b> Havalandırma önerileriyle daha hızlı kuruma sağlanır.</li>
+        <li><b>Kalıntısız durulama:</b> Halıda şampuan kalmaz, sertleşme ve koku riski azalır.</li>
+        <li><b>Derin temizlik:</b> Toz alma + fırçalama ile yüzey değil, dipteki kir hedeflenir.</li>
+        <li><b>Kontrollü kurutma:</b> Nem bırakmadan teslim etmeye özen gösteririz.</li>
+        <li><b>Randevulu alım–teslim:</b> Zamanınızı bölmeden hızlı servis sağlarız.</li>
       </ul>
     </div>
 
+    <!-- YENİ: Hizmetler -->
     <div class="card">
       <h2>Hizmetlerimiz</h2>
       <div class="chips">
         <span class="chip">Halı Yıkama</span>
-        <span class="chip">Koltuk Yıkama (Yerinde)</span>
+        <span class="chip">Koltuk Yıkama</span>
         <span class="chip">Yatak Yıkama</span>
         <span class="chip">Sandalye / Kanepe</span>
         <span class="chip">Leke & Koku Giderme</span>
         <span class="chip">Yerinde Temizlik</span>
       </div>
       <p class="small">
-        WhatsApp’tan halı türü ve ölçü/adet; koltuk için takım sayısı (3+2+1 gibi) yazarsanız hızlı fiyat verebiliriz.
+        WhatsApp’tan halı türü (shaggy, yün, ipek, makine halısı) ve ölçü/adet gönderirseniz hızlı fiyat verebiliriz.
       </p>
     </div>
 
-    <div class="card" id="iletisim">
+    <!-- YENİ: Fiyatı Etkileyenler -->
+    <div class="card">
+      <h2>Fiyatı Neler Etkiler?</h2>
+      <ul>
+        <li>Halı türü (shaggy, yün, el dokuma vb.)</li>
+        <li>Metrekare ve adet</li>
+        <li>Leke yoğunluğu (çay, kahve, mürekkep vb.)</li>
+        <li>Koku problemi (evcil hayvan, rutubet)</li>
+        <li>Alım–teslim mesafesi ve randevu yoğunluğu</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>İlçelere Göre Hizmet Anlatımı</h2>
+      <p class="small">Aşağıdaki bölgelerde halı yıkama işlemlerini aynı standartta, titiz ve düzenli şekilde uyguluyoruz.</p>
+
+      <div class="grid">
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Çankaya Halı Yıkama</span>
+          <h2>Çankaya’da Halı Yıkama</h2>
+          <p>
+            Çankaya bölgesinde halılarınızı adresinizden alıp, önce güçlü <b>toz alma</b> işlemi yapıyoruz.
+            Sonrasında halı tipine göre (yün, shaggy, makine halısı vb.) uygun şampuan ile <b>fırçalama</b> uyguluyoruz.
+            İnatçı çay–kahve lekelerinde noktasal işlem yapıp, bol su ile <b>tam durulama</b> sağlıyoruz.
+          </p>
+          <p>
+            Durulama sonrası halılar santrifüj ile sıkılır, kontrollü ortamda kurutulur ve hijyenik şekilde paketlenerek teslim edilir.
+            Çankaya’da özellikle evcil hayvan kokusu için <b>koku giderme</b> uygulaması da yapıyoruz.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Ümitköy Halı Yıkama</span>
+          <h2>Ümitköy’de Halı Yıkama</h2>
+          <p>
+            Ümitköy’de halı yıkamada en önemli konu, halının dokusunu yıpratmadan derinlemesine temizliktir.
+            Bu yüzden önce <b>toz ve kum</b> tamamen alınır. Ardından uygun şampuanla yüzey ve dip kısım birlikte temizlenir.
+            Köpük kalmaması için <b>çift durulama</b> yapılır; böylece halı sertleşmez, kötü koku oluşmaz.
+          </p>
+          <p>
+            Kurutma aşamasında halıların üzerinde nem bırakmadan teslim ediyoruz. Bu, “koku yaptı” şikayetini büyük ölçüde bitirir.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Etimesgut Halı Yıkama</span>
+          <h2>Etimesgut’ta Halı Yıkama</h2>
+          <p>
+            Etimesgut bölgesinde halıların yoğun kullanımı ve çocuklu evlerde lekeler sık görülüyor.
+            Biz işlemde önce leke türünü tespit ediyor, sonra halıya uygun ürünle <b>ön leke çözme</b> uyguluyoruz.
+            Fırçalama ve durulama sonrası halıyı santrifüjde sıkarak fazla suyu hızlıca atıyoruz.
+          </p>
+          <p>
+            Bu sayede kurutma süresi kısalır ve halı daha çabuk hazır olur. Teslim öncesi son kontrol yapıp paketliyoruz.
+          </p>
+        </div>
+
+        <!-- ✅ SİNCAN EKLENDİ -->
+        <div class="card" style="margin:0;">
+          <span class="badge">Sincan Halı Yıkama</span>
+          <h2>Sincan’da Halı Yıkama</h2>
+          <p>
+            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</b>dır. Halının diplerinde biriken toz ve kum
+            alınmadan yapılan yıkama, kirin halıya daha çok işlemesine sebep olabilir. Bu yüzden önce tozu tamamen çıkarırız.
+          </p>
+          <p>
+            Ardından halı dokusuna uygun ürünlerle <b>şampuanlama ve fırçalama</b> yapılır, leke durumuna göre noktasal işlem uygulanır.
+            Bol su ile durulama sonrası halılar <b>santrifüj sıkma</b> ile sudan arındırılır, kontrollü ortamda kurutulur ve paketlenerek teslim edilir.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">İncek Halı Yıkama</span>
+          <h2>İncek’te Halı Yıkama</h2>
+          <p>
+            İncek’te özellikle büyük metrekare halılar ve salon takımları sık oluyor.
+            Halı yıkamada ilk adımımız <b>derin toz alma</b>; çünkü toz alınmazsa yıkama “çamur” yapabilir.
+            Sonrasında halının iplik yapısına uygun şampuanla nazik ama güçlü fırçalama yapıyoruz.
+          </p>
+          <p>
+            Durulama aşamasını uzun tutarak kimyasal kalıntıyı sıfıra yakın indiriyoruz. Böylece hem görüntü hem hijyen artıyor.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Bağlıca Halı Yıkama</span>
+          <h2>Bağlıca’da Halı Yıkama</h2>
+          <p>
+            Bağlıca’da halılarda toz, polen ve dışarıdan taşınan kir daha fazla olabiliyor.
+            Bu yüzden toz alma ve ön yıkama aşamasına ekstra önem veriyoruz.
+            Ardından şampuanlama ile halıyı hem yüzeyden hem dipten temizleyip bol suyla duruluyoruz.
+          </p>
+          <p>
+            Kurutma tamamlandıktan sonra halıyı kontrol ediyor, gerekiyorsa kısa bir “lokal rötuş” yapıp teslimata çıkarıyoruz.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Çayyolu Halı Yıkama</span>
+          <h2>Çayyolu’nda Halı Yıkama</h2>
+          <p>
+            Çayyolu bölgesinde halıların uzun süre temiz kalması için “kalıntısız yıkama” şart.
+            Biz bu yüzden güçlü durulama yapıyoruz; halıda şampuan kalmaz, halı sertleşmez.
+            Yoğun kullanım alanlarındaki kir ve lekeler için noktasal işlem uygulayıp, halıyı son aşamada santrifüjle sıkıyoruz.
+          </p>
+          <p>
+            Sonuç: Daha parlak görünüm, daha az koku ve daha hijyenik bir halı. Randevu ile hızlı alım–teslim yapıyoruz.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- YENİ: Randevu Akışı -->
+    <div class="card">
+      <h2>Randevu Nasıl Alınır?</h2>
+      <ul>
+        <li><b>1)</b> WhatsApp’tan yazın ya da arayın.</li>
+        <li><b>2)</b> Halı türü + yaklaşık ölçü/adet bilgisini paylaşın.</li>
+        <li><b>3)</b> Uygun gün/saat için randevu oluşturalım.</li>
+        <li><b>4)</b> Alım–yıkama–kurutma–teslim süreci tamamlanır.</li>
+      </ul>
+      <div class="cta-bar">
+        <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- YENİ: SSS -->
+    <div class="card">
+      <h2>Sık Sorulan Sorular</h2>
+
+      <details>
+        <summary>Halılar kaç günde teslim edilir?</summary>
+        <p class="small">Yoğunluğa göre değişir. Genelde yıkama + kurutma sonrası en kısa sürede teslim edilir. Net süre için arayın/yazın.</p>
+      </details>
+
+      <details>
+        <summary>Halı yıkamada koku kalır mı?</summary>
+        <p class="small">Kalıntısız durulama ve doğru kurutma yapıldığında koku problemi büyük ölçüde çözülür. Evcil hayvan kokusunda ekstra işlem uygulanabilir.</p>
+      </details>
+
+      <details>
+        <summary>Yün veya hassas halı yıkıyor musunuz?</summary>
+        <p class="small">Evet. Halı tipine uygun ürün ve daha nazik fırçalama ile işlem yapılır.</p>
+      </details>
+
+      <details>
+        <summary>Fiyatı hızlı nasıl öğrenebilirim?</summary>
+        <p class="small">WhatsApp’tan halı türü ve ölçü/adet bilgisi gönderin; en hızlı şekilde dönüş yapalım.</p>
+      </details>
+    </div>
+
+    <div class="card">
       <h2>Hızlı İletişim</h2>
       <p><b>Telefon:</b> <a href="tel:+905362333675">+90 536 233 36 75</a></p>
       <p><b>WhatsApp:</b> <a href="https://wa.me/905362333675" target="_blank" rel="noopener">Mesaj gönder</a></p>
-      <p class="small">Not: Randevu saatleri ve teslim süresi hizmet türü/adet/yoğunluğa göre değişebilir.</p>
+      <p class="small">Not: Randevu saatleri ve teslim süresi halı adedi/yoğunluğa göre değişebilir.</p>
     </div>
 
     <footer>
@@ -391,6 +451,20 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+<div class="card">
+  <span class="badge">Bilgilendirme</span>
+  <h2>Bu Alan Sadece Koltuk Yıkama Hizmetimizi Kapsar</h2>
 
+  <p class="small">
+    Bu bölümde yer alan tüm açıklamalar, işlemler ve temizlik detayları
+    <b>yalnızca koltuk yıkama hizmetimiz</b> için geçerlidir.
+    Halı yıkama işlemleri farklı ekipman, yöntem ve ortamda uygulanır.
+  </p>
+
+  <p class="small">
+    Koltuk yıkama hizmetimiz çoğunlukla <b>yerinde</b> yapılır ve kumaş türüne göre
+    buharlı temizlik, fırçalama ve vakumlu çekim (ekstraksiyon) yöntemleri birlikte kullanılır.
+  </p>
+</div>
 </body>
 </html>
