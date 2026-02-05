@@ -278,4 +278,4 @@ Ankara merkezli halı ve koltuk yıkama firmasıyız.
     loading="lazy"
     referrerpolicy="no-referrer-when-downgrade">
   </iframe>
-</div>
+</div>google-site-verification=nJ-0YXQZBJBUFTIokC0LaO63Xmlgt9BsqU9--lvBY2I
