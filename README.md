@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Profesyonel Halı & Koltuk Yıkama | Aynı Gün Servis</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Profesyonel halı ve koltuk yıkama hizmeti. Aynı gün servis, hijyenik temizlik, uygun fiyat. Hemen arayın.">
+
+<!-- GOOGLE MAPS SEO -->
+<meta name="geo.region" content="TR">
+<meta name="geo.placename" content="ANKARA">
+<meta name="geo.position" content="39.9334;32.8597">
+<meta name="ICBM" content="39.9334, 32.8597">
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Halı & Koltuk Yıkama",
+  "image": "",
+  "telephone": "+905XXXXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ankara",
+    "addressCountry": "TR"
+  },
+  "areaServed": "Ankara",
+  "url": "https://siteadresin.com"
+}
+</script>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+header{
+    background:linear-gradient(135deg,#0d6efd,#0a58ca);
+    color:#fff;
+    padding:50px 20px;
+    text-align:center;
+}
+header h1{
+    margin:0;
+    font-size:32px;
+}
+header p{
+    margin:10px 0 25px;
+    font-size:18px;
+}
+.btn{
+    display:inline-block;
+    padding:14px 26px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    margin:5px;
+}
+.call{
+    background:#ffc107;
+    color:#000;
+}
+.whatsapp{
+    background:#25d366;
+    color:#fff;
+}
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:30px 20px;
+}
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+.fixed-bar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#fff;
+    display:flex;
+    box-shadow:0 -5px 15px rgba(0,0,0,.1);
+}
+.fixed-bar a{
+    flex:1;
+    padding:15px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bold;
+}
+.fixed-call{background:#ffc107;color:#000;}
+.fixed-wp{background:#25d366;color:#fff;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Halı & Koltuk Yıkama</h1>
+    <p>Aynı Gün Servis • Yerinde Temizlik • Hijyen Garantisi</p>
+    <a class="btn call" href="tel:+905XXXXXXXXX">📞 Tıkla Ara</a>
+    <a class="btn whatsapp" href="https://wa.me/905XXXXXXXXX">💬 WhatsApp</a>
+</header>
+
+<section>
+
+<div class="card">
+<h2>Hizmetlerimiz</h2>
+<div class="grid">
+    <div>✔ Halı Yıkama</div>
+    <div>✔ Koltuk Yıkama</div>
+    <div>✔ Yatak Yıkama</div>
+    <div>✔ Araç Koltuğu</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Neden Bizi Tercih Etmelisiniz?</h2>
+<p>
+Endüstriyel makineler, antibakteriyel ürünler ve deneyimli ekip ile
+evinizde hijyenik temizlik sağlıyoruz. Google Harita üzerinden kolayca
+ulaşabilirsiniz.
+</p>
+</div>
+
+<div class="card">
+<h2>İletişim</h2>
+<p><strong>Telefon:</strong> 05XX XXX XX XX</p>
+<p><strong>Hizmet Bölgesi:</strong> Ankara ve çevresi</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Halı & Koltuk Yıkama • Tüm Hakları Saklıdır
+</footer>
+
+<!-- MOBIL SABIT BUTON -->
+<div class="fixed-bar">
+    <a class="fixed-call" href="tel:+905XXXXXXXXX">📞 Ara</a>
+    <a class="fixed-wp" href="https://wa.me/905XXXXXXXXX">💬 WhatsApp</a>
+</div>
+
+</body>
+</html>
