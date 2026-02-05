@@ -152,7 +152,7 @@ footer{
 .mobile-call{background:#fbbf24;color:#000}
 .mobile-wp{background:#22c55e;color:#fff}
 </style>
-</head>
+</head>google-site-verification=nJ-0YXQZBJBUFTIokC0LaO63Xmlgt9BsqU9--lvBY2I
 
 <body>
 
