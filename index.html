@@ -1,359 +1,468 @@
-<!doctype html>
+<!DOCTYPE html> 
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ankara Halı Yıkama & Koltuk Yıkama | Çayyolu • Etimesgut • Eryaman • Sincan</title>
-  <meta name="description" content="Ankara’da profesyonel halı yıkama, koltuk yıkama, stor perde yıkama, yorgan & battaniye yıkama. Çayyolu, Bağlıca, Etimesgut, Eryaman, Yaşamkent, Ümitköy, Batıkent, Sincan." />
-  <link rel="canonical" href="https://www.yaprakhaliyikama.net/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta property="og:title" content="Yaprak Halı Yıkama | Ankara Halı & Koltuk Yıkama" />
-  <meta property="og:description" content="Çayyolu, Bağlıca, Etimesgut, Eryaman, Yaşamkent, Ümitköy, Batıkent, Sincan bölgelerine servis." />
-  <meta property="og:url" content="https://www.yaprakhaliyikama.net/" />
-  <meta property="og:type" content="website" />
+  <title>Ankara Halı & Koltuk Yıkama | Çankaya, Ümitköy, Etimesgut, Sincan</title>
 
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="p6C1SKYZ9hB3r5kp9j9GsxUn48lJKgUAurSogbpipDk" />
+
+  <!-- SEO -->
+  <meta name="description"
+        content="Ankara halı yıkama ve koltuk yıkama hizmeti. Çankaya, Ümitköy, Etimesgut, Sincan, İncek, Bağlıca, Çayyolu bölgelerinde adresten alım–teslim. Hızlı servis, hijyenik yıkama, leke & koku giderme." />
+
+  <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Yaprak Halı Yıkama",
-    "url":"https://www.yaprakhaliyikama.net/",
-    "telephone":["+905362333675","+903122440304"],
-    "areaServed":["Çayyolu","Bağlıca","Etimesgut","Eryaman","Yaşamkent","Ümitköy","Batıkent","Sincan","Ankara"],
-    "serviceType":["Halı Yıkama","Koltuk Yıkama","Stor Perde Yıkama","Yorgan Yıkama","Battaniye Yıkama"]
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Ankara Halı & Koltuk Yıkama",
+    "telephone": "+905362333675",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ankara",
+      "addressRegion": "TR"
+    },
+    "areaServed": [
+      "Çankaya",
+      "Ümitköy",
+      "Etimesgut",
+      "Sincan",
+      "İncek",
+      "Bağlıca",
+      "Çayyolu"
+    ],
+    "url": "https://www.yaprakhaliyikama.net"
   }
   </script>
 
   <style>
     :root{
-      --bg:#0b1220;
-      --card:rgba(255,255,255,.08);
-      --card2:rgba(255,255,255,.06);
-      --border:rgba(255,255,255,.12);
-      --text:#eef2ff;
-      --muted:rgba(238,242,255,.72);
-      --shadow:0 18px 60px rgba(0,0,0,.45);
-      --radius:18px;
+      --bg:#f5f5f5;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --blue:#2563eb;
+      --green:#25D366;
+      --shadow: 0 10px 25px rgba(0,0,0,.08);
+      --radius: 16px;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background:
-        radial-gradient(1200px 700px at 20% 10%, rgba(56,189,248,.30), transparent 60%),
-        radial-gradient(900px 600px at 80% 20%, rgba(34,197,94,.25), transparent 55%),
-        radial-gradient(900px 600px at 50% 90%, rgba(168,85,247,.18), transparent 55%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.55;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:18px}
-    .nav{
-      position:sticky; top:0; z-index:50;
-      background:rgba(11,18,32,.65);
-      backdrop-filter: blur(10px);
-      border-bottom:1px solid rgba(255,255,255,.10);
+    header{
+      background: linear-gradient(135deg,#111827,#2563eb);
+      color:#fff;
+      padding: 24px 14px;
+      text-align:center;
     }
-    .nav-inner{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding:12px 0;
+    header h1{margin:0;font-size:26px}
+    header p{margin:10px 0 0;color:rgba(255,255,255,.88)}
+    .container{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 16px;
     }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:900; letter-spacing:.2px;
+    .actions{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin: 16px 0 6px;
     }
-    .logo{
-      width:38px;height:38px;border-radius:12px;
-      background: linear-gradient(135deg, rgba(56,189,248,.95), rgba(34,197,94,.95));
-      display:grid;place-items:center;
-      box-shadow: 0 14px 40px rgba(56,189,248,.25);
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      min-width: 210px;
+      box-shadow: var(--shadow);
     }
-    .logo span{filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
-    .pill{
-      font-size:12px;
-      padding:5px 10px;
-      border:1px solid rgba(255,255,255,.16);
-      border-radius:999px;
-      color:var(--muted);
-      background: rgba(255,255,255,.06);
+    .btn-call{background: var(--blue);}
+    .btn-wa{background: var(--green);}
+    .note{
+      text-align:center;
+      color: var(--muted);
+      margin: 10px 0 18px;
+      font-size: 14px;
     }
-    .menu{display:flex; gap:10px; flex-wrap:wrap}
-    .menu a{
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid transparent;
-      color:var(--muted);
-    }
-    .menu a:hover{
-      border-color:rgba(255,255,255,.16);
-      background:rgba(255,255,255,.06);
-      color:var(--text);
-    }
-
-    .hero{padding:22px 0 10px}
-    .grid{display:grid; grid-template-columns: 1.25fr .75fr; gap:16px}
-    @media(max-width:980px){.grid{grid-template-columns:1fr}}
-
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06));
-      border:1px solid rgba(255,255,255,.12);
+      background: var(--card);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding:18px;
+      padding: 18px;
+      margin: 14px 0;
+      text-align:left;
     }
-    .card.soft{
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      box-shadow: 0 14px 45px rgba(0,0,0,.35);
+    .card h2{
+      margin:0 0 10px;
+      font-size: 20px;
     }
-
-    .h1{font-size:38px; line-height:1.1; margin:8px 0 10px}
-    @media(max-width:480px){.h1{font-size:32px}}
-    .lead{margin:0; color:var(--muted); font-size:16px}
-    .badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+    }
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
     .badge{
-      padding:7px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color:rgba(238,242,255,.86);
-      font-size:13px;
+      display:inline-block;
+      font-size:12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background:#eef2ff;
+      color:#3730a3;
+      margin-bottom: 10px;
+      font-weight: 700;
     }
-
-    .ctas{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:12px 14px;
-      border-radius:14px;
-      font-weight:800;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      color:var(--text);
-      transition: transform .08s ease, filter .08s ease;
-      min-height:46px;
+    ul{
+      margin:10px 0 0;
+      padding-left: 18px;
     }
-    .btn:hover{transform: translateY(-1px); filter:brightness(1.05)}
-    .btn.primary{
-      border:none;
-      background: linear-gradient(135deg, rgba(56,189,248,.95), rgba(34,197,94,.95));
-      color:#07101f;
+    li{ margin: 7px 0; }
+    .map-wrap{
+      overflow:hidden;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
     }
-    .btn.dark{
-      background: rgba(0,0,0,.25);
-      border:1px solid rgba(255,255,255,.12);
+    .whatsapp-fixed{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: var(--green);
+      color:#fff;
+      padding: 14px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration:none;
+      box-shadow: 0 10px 25px rgba(0,0,0,.22);
     }
-    .btn.whatsapp{
-      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(16,185,129,.95));
-      border:none;
-      color:#06110b;
+    footer{
+      text-align:center;
+      color: var(--muted);
+      padding: 22px 10px 90px;
+      font-size: 13px;
     }
-
-    .section{margin-top:18px}
-    .h2{font-size:20px; margin:0 0 10px}
-    .cards{display:grid; grid-template-columns: repeat(3,1fr); gap:12px}
-    @media(max-width:980px){.cards{grid-template-columns:1fr}}
-    .mini{
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 16px;
-      padding:14px;
+    .small{
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 6px;
     }
-    .mini h3{margin:0 0 6px; font-size:16px}
-    .mini p{margin:0; color:var(--muted); font-size:14px}
-
-    .chips{display:flex; flex-wrap:wrap; gap:10px}
-    .chip{
-      padding:10px 12px;
+    .cta-bar{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top: 12px;
+    }
+    .cta-bar a{flex:1}
+    details{
+      background:#fff;
       border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.12);
-      color:rgba(238,242,255,.86);
-      font-weight:700;
-      font-size:14px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      margin: 10px 0;
     }
-
-    .faq details{
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 16px;
-      padding:12px 14px;
+    summary{
+      cursor:pointer;
+      font-weight: 800;
     }
-    .faq details+details{margin-top:10px}
-    .faq summary{cursor:pointer; font-weight:800}
-    .small{font-size:13px; color:var(--muted)}
-    .footer{
-      padding:22px 0; color:var(--muted);
-      border-top:1px solid rgba(255,255,255,.10);
-      margin-top:18px
+    .chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top: 10px;
     }
-    .kpi{
-      display:grid; grid-template-columns: 1fr 1fr;
-      gap:10px; margin-top:14px
+    .chip{
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      padding:6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color:#0f172a;
     }
-    @media(max-width:520px){.kpi{grid-template-columns:1fr}}
-    .kpi .box{
-      padding:12px; border-radius:16px;
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-    }
-    .kpi b{display:block; font-size:16px}
   </style>
 </head>
 
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"><span>🧼</span></div>
-        <div>
-          <div>Yaprak Halı Yıkama</div>
-          <div class="small">Ankara • Halı / Koltuk / Stor / Yorgan</div>
-        </div>
-      </div>
-      <div class="menu">
-        <a href="#hizmetler">Hizmetler</a>
-        <a href="#bolgeler">Bölgeler</a>
-        <a href="#sss">SSS</a>
-        <a class="pill" href="tel:+905362333675">0536 233 36 75</a>
-      </div>
-    </div>
+
+  <header>
+    <h1>Ankara Halı & Koltuk Yıkama</h1>
+    <p>Çankaya • Ümitköy • Etimesgut • Sincan • İncek • Bağlıca • Çayyolu</p>
   </header>
 
-  <main class="container hero">
-    <div class="grid">
-      <section class="card">
-        <div class="pill" style="display:inline-flex;gap:8px;align-items:center;">
-          ⭐ Hızlı teklif • WhatsApp ile
-        </div>
+  <div class="container">
 
-        <h1 class="h1">Ankara Halı Yıkama & Koltuk Yıkama</h1>
-        <p class="lead">
-          Ankara’da <b>halı yıkama</b>, <b>koltuk yıkama</b>, <b>stor perde yıkama</b>,
-          <b>yorgan & battaniye yıkama</b> hizmeti. Çayyolu, Bağlıca, Etimesgut, Eryaman,
-          Yaşamkent, Ümitköy, Batıkent ve Sincan bölgelerine servis.
-        </p>
+    <div class="actions">
+      <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+      <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
 
-        <div class="badges">
-          <span class="badge">✅ Hijyenik yıkama</span>
-          <span class="badge">✅ Leke & koku odaklı</span>
-          <span class="badge">✅ Hızlı iletişim</span>
-          <span class="badge">✅ Uygun bölgede alım-teslim</span>
-        </div>
+    <div class="note">
+      Hızlı randevu • Adresten alım–teslim • Hijyenik yıkama • Leke & koku giderme
+    </div>
 
-        <div class="ctas">
-          <a class="btn primary" href="tel:+905362333675">📞 0536 233 36 75</a>
-          <a class="btn dark" href="tel:+903122440304">☎️ 0312 244 03 04</a>
-          <a class="btn whatsapp" target="_blank" rel="noopener"
-             href="https://wa.me/905362333675?text=Merhaba%2C%20fiyat%20almak%20istiyorum.%20B%C3%B6lge%3A%20...%20Hizmet%3A%20Halı%2FKoltuk%2FStor%2FYorgan%20%C3%96l%C3%A7%C3%BC%3A%20...">
-            💬 WhatsApp’tan Fiyat Al
-          </a>
-        </div>
+    <div class="card">
+      <span class="badge">Hizmet Bölgemiz</span>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Ankara&output=embed"
+          width="100%"
+          height="360"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p class="small">
+        Randevu oluşturduktan sonra halılarınız adresinizden alınır, profesyonel yıkama sonrası kurutulup paketlenir ve tekrar teslim edilir.
+      </p>
+      <div class="cta-bar">
+        <a class="btn btn-call" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
+        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp’tan Yaz</a>
+      </div>
+    </div>
 
-        <div class="kpi">
-          <div class="box"><b>Hızlı Teklif</b><span class="small">Ölçü + hizmet yaz</span></div>
-          <div class="box"><b>Çoklu Hizmet</b><span class="small">Halı • Koltuk • Stor • Yorgan</span></div>
-        </div>
+    <div class="card">
+      <h2>Halı Yıkama Sürecimiz</h2>
+      <ul>
+        <li><b>Ön kontrol:</b> Halı tipi, leke ve koku durumu kontrol edilir.</li>
+        <li><b>Toz alma:</b> Halının derinine işlemiş toz ve kum özel makinelerle alınır.</li>
+        <li><b>Şampuanlama:</b> Halı dokusuna uygun ürünlerle fırçalama yapılır.</li>
+        <li><b>Durulama:</b> Köpük kalmayacak şekilde bol su ile durulanır.</li>
+        <li><b>Sıkma & kurutma:</b> Santrifüj sıkma ile su atılır, kontrollü ortamda kurutulur.</li>
+        <li><b>Paketleme & teslim:</b> Hijyenik şekilde paketlenip randevunuza göre teslim edilir.</li>
+      </ul>
+      <p class="small">
+        Not: Yün ve hassas halılarda daha nazik ürünler ve düşük devir fırçalama uygulanır.
+      </p>
+    </div>
 
-        <div class="section" id="hizmetler">
-          <h2 class="h2">Hizmetler</h2>
-          <div class="cards">
-            <div class="mini"><h3>🧽 Halı Yıkama</h3><p>Makine, yün, bambu, el dokuma vb. halıya uygun yıkama.</p></div>
-            <div class="mini"><h3>🛋️ Koltuk Yıkama</h3><p>Derin temizlik, leke & koku giderme, hijyenik uygulama.</p></div>
-            <div class="mini"><h3>🪟 Stor Perde</h3><p>Hassas kumaşa uygun işlem, detaylı durulama.</p></div>
-            <div class="mini"><h3>🧺 Yorgan & Battaniye</h3><p>Hijyenik yıkama, iyi durulama, ferah koku.</p></div>
-            <div class="mini"><h3>🚚 Alım–Teslim</h3><p>Uygun bölgelerde planlı alım–teslim.</p></div>
-            <div class="mini"><h3>⚡ Hızlı İletişim</h3><p>Telefon veya WhatsApp’tan hemen bilgi alın.</p></div>
-          </div>
-        </div>
+    <!-- YENİ: Neden Biz? -->
+    <div class="card">
+      <h2>Neden Bizi Tercih Etmelisiniz?</h2>
+      <ul>
+        <li><b>Kalıntısız durulama:</b> Halıda şampuan kalmaz, sertleşme ve koku riski azalır.</li>
+        <li><b>Derin temizlik:</b> Toz alma + fırçalama ile yüzey değil, dipteki kir hedeflenir.</li>
+        <li><b>Kontrollü kurutma:</b> Nem bırakmadan teslim etmeye özen gösteririz.</li>
+        <li><b>Randevulu alım–teslim:</b> Zamanınızı bölmeden hızlı servis sağlarız.</li>
+      </ul>
+    </div>
 
-        <div class="section" id="bolgeler">
-          <h2 class="h2">Hizmet Bölgeleri</h2>
-          <div class="chips">
-            <span class="chip">Çayyolu</span>
-            <span class="chip">Bağlıca</span>
-            <span class="chip">Etimesgut</span>
-            <span class="chip">Eryaman</span>
-            <span class="chip">Yaşamkent</span>
-            <span class="chip">Ümitköy</span>
-            <span class="chip">Batıkent</span>
-            <span class="chip">Sincan</span>
-          </div>
-          <p class="small" style="margin-top:10px;">Bölge + hizmet + ölçü yaz, hemen fiyat verelim.</p>
-        </div>
+    <!-- YENİ: Hizmetler -->
+    <div class="card">
+      <h2>Hizmetlerimiz</h2>
+      <div class="chips">
+        <span class="chip">Halı Yıkama</span>
+        <span class="chip">Koltuk Yıkama</span>
+        <span class="chip">Yatak Yıkama</span>
+        <span class="chip">Sandalye / Kanepe</span>
+        <span class="chip">Leke & Koku Giderme</span>
+        <span class="chip">Yerinde Temizlik</span>
+      </div>
+      <p class="small">
+        WhatsApp’tan halı türü (shaggy, yün, ipek, makine halısı) ve ölçü/adet gönderirseniz hızlı fiyat verebiliriz.
+      </p>
+    </div>
 
-        <div class="section faq" id="sss">
-          <h2 class="h2">Sık Sorulan Sorular</h2>
-          <details>
-            <summary>Fiyat neye göre değişiyor?</summary>
-            <div class="small">Hizmet türü + ölçü (m²/adet) + bölge bilgisine göre net fiyat çıkar.</div>
-          </details>
-          <details>
-            <summary>Kaç günde teslim ediyorsunuz?</summary>
-            <div class="small">Yoğunluk ve hava koşullarına göre değişir. Arayın, güncel süreyi söyleyelim.</div>
-          </details>
-          <details>
-            <summary>Alım–teslim var mı?</summary>
-            <div class="small">Çayyolu, Bağlıca, Etimesgut, Eryaman, Yaşamkent, Ümitköy, Batıkent, Sincan için uygun koşullarda yapılır.</div>
-          </details>
-        </div>
-      </section>
+    <!-- YENİ: Fiyatı Etkileyenler -->
+    <div class="card">
+      <h2>Fiyatı Neler Etkiler?</h2>
+      <ul>
+        <li>Halı türü (shaggy, yün, el dokuma vb.)</li>
+        <li>Metrekare ve adet</li>
+        <li>Leke yoğunluğu (çay, kahve, mürekkep vb.)</li>
+        <li>Koku problemi (evcil hayvan, rutubet)</li>
+        <li>Alım–teslim mesafesi ve randevu yoğunluğu</li>
+      </ul>
+    </div>
 
-      <aside class="card soft">
-        <h2 class="h2">Hızlı Teklif Formülü</h2>
-        <p class="small">WhatsApp’a şu formatta yaz, direkt fiyat verelim:</p>
-        <div class="mini" style="margin-top:10px;">
-          <h3 style="margin:0 0 6px;">📩 Mesaj Örneği</h3>
-          <p class="small" style="margin:0;">
-            Bölge: Çayyolu<br/>
-            Hizmet: Halı / Koltuk / Stor / Yorgan<br/>
-            Ölçü: … m² / … adet
+    <div class="card">
+      <h2>İlçelere Göre Hizmet Anlatımı</h2>
+      <p class="small">Aşağıdaki bölgelerde halı yıkama işlemlerini aynı standartta, titiz ve düzenli şekilde uyguluyoruz.</p>
+
+      <div class="grid">
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Çankaya Halı Yıkama</span>
+          <h2>Çankaya’da Halı Yıkama</h2>
+          <p>
+            Çankaya bölgesinde halılarınızı adresinizden alıp, önce güçlü <b>toz alma</b> işlemi yapıyoruz.
+            Sonrasında halı tipine göre (yün, shaggy, makine halısı vb.) uygun şampuan ile <b>fırçalama</b> uyguluyoruz.
+            İnatçı çay–kahve lekelerinde noktasal işlem yapıp, bol su ile <b>tam durulama</b> sağlıyoruz.
+          </p>
+          <p>
+            Durulama sonrası halılar santrifüj ile sıkılır, kontrollü ortamda kurutulur ve hijyenik şekilde paketlenerek teslim edilir.
+            Çankaya’da özellikle evcil hayvan kokusu için <b>koku giderme</b> uygulaması da yapıyoruz.
           </p>
         </div>
 
-        <div class="ctas" style="margin-top:14px;">
-          <a class="btn whatsapp" target="_blank" rel="noopener"
-             href="https://wa.me/905362333675?text=B%C3%B6lge%3A%20...%0AHizmet%3A%20...%0A%C3%96l%C3%A7%C3%BC%3A%20...">
-            💬 WhatsApp’a Yaz
-          </a>
-          <a class="btn dark" href="tel:+905362333675">📞 Hemen Ara</a>
+        <div class="card" style="margin:0;">
+          <span class="badge">Ümitköy Halı Yıkama</span>
+          <h2>Ümitköy’de Halı Yıkama</h2>
+          <p>
+            Ümitköy’de halı yıkamada en önemli konu, halının dokusunu yıpratmadan derinlemesine temizliktir.
+            Bu yüzden önce <b>toz ve kum</b> tamamen alınır. Ardından uygun şampuanla yüzey ve dip kısım birlikte temizlenir.
+            Köpük kalmaması için <b>çift durulama</b> yapılır; böylece halı sertleşmez, kötü koku oluşmaz.
+          </p>
+          <p>
+            Kurutma aşamasında halıların üzerinde nem bırakmadan teslim ediyoruz. Bu, “koku yaptı” şikayetini büyük ölçüde bitirir.
+          </p>
         </div>
 
-        <div class="section">
-          <h2 class="h2">İletişim</h2>
-          <p class="small" style="margin:0;">0536 233 36 75</p>
-          <p class="small" style="margin:0;">0312 244 03 04</p>
+        <div class="card" style="margin:0;">
+          <span class="badge">Etimesgut Halı Yıkama</span>
+          <h2>Etimesgut’ta Halı Yıkama</h2>
+          <p>
+            Etimesgut bölgesinde halıların yoğun kullanımı ve çocuklu evlerde lekeler sık görülüyor.
+            Biz işlemde önce leke türünü tespit ediyor, sonra halıya uygun ürünle <b>ön leke çözme</b> uyguluyoruz.
+            Fırçalama ve durulama sonrası halıyı santrifüjde sıkarak fazla suyu hızlıca atıyoruz.
+          </p>
+          <p>
+            Bu sayede kurutma süresi kısalır ve halı daha çabuk hazır olur. Teslim öncesi son kontrol yapıp paketliyoruz.
+          </p>
         </div>
-      </aside>
-    </div>
-<header class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="/" aria-label="Ana Sayfa">
-      <div class="logo" aria-hidden="true"><span>🧼</span></div>
-      <div class="brand-text">
-        <div class="brand-title">Yaprak Halı Yıkama</div>
-        <div class="brand-sub">Ankara • Halı / Koltuk / Stor / Yorgan</div>
-      </div>
-    </a>
 
-    <div class="nav-actions">
-      <a class="nav-btn call" href="tel:+905362333675">Ara</a>
-      <a class="nav-btn wa" target="_blank" rel="noopener"
-         href="https://wa.me/905362333675?text=Merhaba%2C%20fiyat%20almak%20istiyorum.%20B%C3%B6lge%3A%20...%20Hizmet%3A%20...%20%C3%96l%C3%A7%C3%BC%3A%20...">
-        WhatsApp
-      </a>
-    </div>
-  </div>
-</header>
-    <footer class="footer">
-      <div class="container" style="padding:0;">
-        <div class="small">© <span id="y"></span> Yaprak Halı Yıkama • Ankara</div>
+        <!-- ✅ SİNCAN EKLENDİ -->
+        <div class="card" style="margin:0;">
+          <span class="badge">Sincan Halı Yıkama</span>
+          <h2>Sincan’da Halı Yıkama</h2>
+          <p>
+            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</b>dır. Halının diplerinde biriken toz ve kum
+            alınmadan yapılan yıkama, kirin halıya daha çok işlemesine sebep olabilir. Bu yüzden önce tozu tamamen çıkarırız.
+          </p>
+          <p>
+            Ardından halı dokusuna uygun ürünlerle <b>şampuanlama ve fırçalama</b> yapılır, leke durumuna göre noktasal işlem uygulanır.
+            Bol su ile durulama sonrası halılar <b>santrifüj sıkma</b> ile sudan arındırılır, kontrollü ortamda kurutulur ve paketlenerek teslim edilir.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">İncek Halı Yıkama</span>
+          <h2>İncek’te Halı Yıkama</h2>
+          <p>
+            İncek’te özellikle büyük metrekare halılar ve salon takımları sık oluyor.
+            Halı yıkamada ilk adımımız <b>derin toz alma</b>; çünkü toz alınmazsa yıkama “çamur” yapabilir.
+            Sonrasında halının iplik yapısına uygun şampuanla nazik ama güçlü fırçalama yapıyoruz.
+          </p>
+          <p>
+            Durulama aşamasını uzun tutarak kimyasal kalıntıyı sıfıra yakın indiriyoruz. Böylece hem görüntü hem hijyen artıyor.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Bağlıca Halı Yıkama</span>
+          <h2>Bağlıca’da Halı Yıkama</h2>
+          <p>
+            Bağlıca’da halılarda toz, polen ve dışarıdan taşınan kir daha fazla olabiliyor.
+            Bu yüzden toz alma ve ön yıkama aşamasına ekstra önem veriyoruz.
+            Ardından şampuanlama ile halıyı hem yüzeyden hem dipten temizleyip bol suyla duruluyoruz.
+          </p>
+          <p>
+            Kurutma tamamlandıktan sonra halıyı kontrol ediyor, gerekiyorsa kısa bir “lokal rötuş” yapıp teslimata çıkarıyoruz.
+          </p>
+        </div>
+
+        <div class="card" style="margin:0;">
+          <span class="badge">Çayyolu Halı Yıkama</span>
+          <h2>Çayyolu’nda Halı Yıkama</h2>
+          <p>
+            Çayyolu bölgesinde halıların uzun süre temiz kalması için “kalıntısız yıkama” şart.
+            Biz bu yüzden güçlü durulama yapıyoruz; halıda şampuan kalmaz, halı sertleşmez.
+            Yoğun kullanım alanlarındaki kir ve lekeler için noktasal işlem uygulayıp, halıyı son aşamada santrifüjle sıkıyoruz.
+          </p>
+          <p>
+            Sonuç: Daha parlak görünüm, daha az koku ve daha hijyenik bir halı. Randevu ile hızlı alım–teslim yapıyoruz.
+          </p>
+        </div>
+
       </div>
+    </div>
+
+    <!-- YENİ: Randevu Akışı -->
+    <div class="card">
+      <h2>Randevu Nasıl Alınır?</h2>
+      <ul>
+        <li><b>1)</b> WhatsApp’tan yazın ya da arayın.</li>
+        <li><b>2)</b> Halı türü + yaklaşık ölçü/adet bilgisini paylaşın.</li>
+        <li><b>3)</b> Uygun gün/saat için randevu oluşturalım.</li>
+        <li><b>4)</b> Alım–yıkama–kurutma–teslim süreci tamamlanır.</li>
+      </ul>
+      <div class="cta-bar">
+        <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- YENİ: SSS -->
+    <div class="card">
+      <h2>Sık Sorulan Sorular</h2>
+
+      <details>
+        <summary>Halılar kaç günde teslim edilir?</summary>
+        <p class="small">Yoğunluğa göre değişir. Genelde yıkama + kurutma sonrası en kısa sürede teslim edilir. Net süre için arayın/yazın.</p>
+      </details>
+
+      <details>
+        <summary>Halı yıkamada koku kalır mı?</summary>
+        <p class="small">Kalıntısız durulama ve doğru kurutma yapıldığında koku problemi büyük ölçüde çözülür. Evcil hayvan kokusunda ekstra işlem uygulanabilir.</p>
+      </details>
+
+      <details>
+        <summary>Yün veya hassas halı yıkıyor musunuz?</summary>
+        <p class="small">Evet. Halı tipine uygun ürün ve daha nazik fırçalama ile işlem yapılır.</p>
+      </details>
+
+      <details>
+        <summary>Fiyatı hızlı nasıl öğrenebilirim?</summary>
+        <p class="small">WhatsApp’tan halı türü ve ölçü/adet bilgisi gönderin; en hızlı şekilde dönüş yapalım.</p>
+      </details>
+    </div>
+
+    <div class="card">
+      <h2>Hızlı İletişim</h2>
+      <p><b>Telefon:</b> <a href="tel:+905362333675">+90 536 233 36 75</a></p>
+      <p><b>WhatsApp:</b> <a href="https://wa.me/905362333675" target="_blank" rel="noopener">Mesaj gönder</a></p>
+      <p class="small">Not: Randevu saatleri ve teslim süresi halı adedi/yoğunluğa göre değişebilir.</p>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Ankara Halı & Koltuk Yıkama • Tüm hakları saklıdır.
     </footer>
-  </main>
+
+  </div>
+
+  <a class="whatsapp-fixed" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+<div class="card">
+  <span class="badge">Bilgilendirme</span>
+  <h2>Bu Alan Sadece Koltuk Yıkama Hizmetimizi Kapsar</h2>
+
+  <p class="small">
+    Bu bölümde yer alan tüm açıklamalar, işlemler ve temizlik detayları
+    <b>yalnızca koltuk yıkama hizmetimiz</b> için geçerlidir.
+    Halı yıkama işlemleri farklı ekipman, yöntem ve ortamda uygulanır.
+  </p>
+
+  <p class="small">
+    Koltuk yıkama hizmetimiz çoğunlukla <b>yerinde</b> yapılır ve kumaş türüne göre
+    buharlı temizlik, fırçalama ve vakumlu çekim (ekstraksiyon) yöntemleri birlikte kullanılır.
+  </p>
+</div>
 </body>
-</html>
