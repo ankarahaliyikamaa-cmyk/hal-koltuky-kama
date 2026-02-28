@@ -210,6 +210,28 @@
       background:#eaf2ff;
       border-color:#c7ddff;
     }
+
+    /* ✅ GALERİ */
+    .gallery{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:14px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.12);
+      transition: .25s ease;
+    }
+    .gallery img:hover{
+      transform: scale(1.02);
+    }
+    @media (min-width: 860px){
+      .gallery{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -234,7 +256,6 @@
     <div class="card">
       <span class="badge">Hizmet Bölgemiz</span>
 
-      <!-- ✅ Tema uyumlu ilçe linkleri (chip) -->
       <div class="chips" style="margin-top:12px;">
         <a class="chip" href="/cayyolu-hali-yikama.html">Çayyolu Halı Yıkama</a>
         <a class="chip" href="/umitkoy-hali-yikama.html">Ümitköy Halı Yıkama</a>
@@ -267,6 +288,21 @@
       <div class="cta-bar">
         <a class="btn btn-call" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
         <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp’tan Yaz</a>
+      </div>
+    </div>
+
+    <!-- ✅ FOTO GALERİ (Haritanın altına eklendi) -->
+    <div class="card">
+      <h2>Halı Yıkama Tesisimiz</h2>
+      <p class="small">Bazı çalışma görüntülerimiz:</p>
+
+      <div class="gallery">
+        <img src="/images/ankara-hali-yikama-1.jpg" alt="Ankara halı yıkama tesisi" loading="lazy">
+        <img src="/images/ankara-hali-yikama-2.jpg" alt="Halı şampuanlama ve fırçalama" loading="lazy">
+        <img src="/images/ankara-hali-yikama-3.jpg" alt="Halı durulama ve sıkma sistemi" loading="lazy">
+        <img src="/images/ankara-hali-yikama-4.jpg" alt="Paketlenmiş halılar teslim için hazır" loading="lazy">
+        <img src="/images/ankara-hali-yikama-5.jpg" alt="Profesyonel halı yıkama Ankara" loading="lazy">
+        <img src="/images/ankara-hali-yikama-6.jpg" alt="Yaprak Halı Yıkama servis aracı" loading="lazy">
       </div>
     </div>
 
@@ -371,7 +407,7 @@
           <span class="badge">Sincan Halı Yıkama</span>
           <h2>Sincan’da Halı Yıkama</h2>
           <p>
-            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</b>dır. Halının diplerinde biriken toz ve kum
+            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</bdır. Halının diplerinde biriken toz ve kum
             alınmadan yapılan yıkama, kirin halıya daha çok işlemesine sebep olabilir. Bu yüzden önce tozu tamamen çıkarırız.
           </p>
           <p>
@@ -467,7 +503,6 @@
       <p class="small">Not: Randevu saatleri ve teslim süresi halı adedi/yoğunluğa göre değişebilir.</p>
     </div>
 
-    <!-- ✅ Bilgilendirme kartı container içine alındı -->
     <div class="card">
       <span class="badge">Bilgilendirme</span>
       <h2>Bu Alan Sadece Koltuk Yıkama Hizmetimizi Kapsar</h2>
