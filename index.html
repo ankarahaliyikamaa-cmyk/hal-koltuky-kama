@@ -1,6 +1,15 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="tr">
-<head><!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-655401278"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-655401278'); </script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-655401278"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-655401278');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -34,7 +43,7 @@
       "Bağlıca",
       "Çayyolu"
     ],
-    "url": "https://www.yaprakhaliyikama.net"
+    "url": "https://yaprakhaliyikama.net"
   }
   </script>
 
@@ -192,6 +201,14 @@
       border-radius: 999px;
       font-size: 13px;
       color:#0f172a;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+    .chip:hover{
+      background:#eaf2ff;
+      border-color:#c7ddff;
     }
   </style>
 </head>
@@ -216,18 +233,22 @@
 
     <div class="card">
       <span class="badge">Hizmet Bölgemiz</span>
-      <ul style="margin-top:15px; line-height:28px;">
-  <li><a href="/cayyolu-hali-yikama.html">Çayyolu Halı Yıkama</a></li>
-  <li><a href="/umitkoy-hali-yikama.html">Ümitköy Halı Yıkama</a></li>
-  <li><a href="/yasamkent-hali-yikama.html">Yaşamkent Halı Yıkama</a></li>
-  <li><a href="/eryaman-hali-yikama.html">Eryaman Halı Yıkama</a></li>
-  <li><a href="/etimesgut-hali-yikama.html">Etimesgut Halı Yıkama</a></li>
-  <li><a href="/baglica-hali-yikama.html">Bağlıca Halı Yıkama</a></li>
-  <li><a href="/sincan-hali-yikama.html">Sincan Halı Yıkama</a></li>
-  <li><a href="/batikent-hali-yikama.html">Batıkent Halı Yıkama</a></li>
-  <li><a href="/alacaatli-hali-yikama.html">Alacaatlı Halı Yıkama</a></li>
-</ul>
-      <div class="map-wrap">
+
+      <!-- ✅ Tema uyumlu ilçe linkleri (chip) -->
+      <div class="chips" style="margin-top:12px;">
+        <a class="chip" href="/cayyolu-hali-yikama.html">Çayyolu Halı Yıkama</a>
+        <a class="chip" href="/umitkoy-hali-yikama.html">Ümitköy Halı Yıkama</a>
+        <a class="chip" href="/yasamkent-hali-yikama.html">Yaşamkent Halı Yıkama</a>
+        <a class="chip" href="/eryaman-hali-yikama.html">Eryaman Halı Yıkama</a>
+        <a class="chip" href="/etimesgut-hali-yikama.html">Etimesgut Halı Yıkama</a>
+        <a class="chip" href="/baglica-hali-yikama.html">Bağlıca Halı Yıkama</a>
+        <a class="chip" href="/sincan-hali-yikama.html">Sincan Halı Yıkama</a>
+        <a class="chip" href="/batikent-hali-yikama.html">Batıkent Halı Yıkama</a>
+        <a class="chip" href="/incek-hali-yikama.html">İncek Halı Yıkama</a>
+        <a class="chip" href="/alacaatli-hali-yikama.html">Alacaatlı Halı Yıkama</a>
+      </div>
+
+      <div class="map-wrap" style="margin-top:14px;">
         <iframe
           src="https://www.google.com/maps?q=Ankara&output=embed"
           width="100%"
@@ -238,9 +259,11 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
+
       <p class="small">
         Randevu oluşturduktan sonra halılarınız adresinizden alınır, profesyonel yıkama sonrası kurutulup paketlenir ve tekrar teslim edilir.
       </p>
+
       <div class="cta-bar">
         <a class="btn btn-call" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
         <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp’tan Yaz</a>
@@ -262,7 +285,6 @@
       </p>
     </div>
 
-    <!-- YENİ: Neden Biz? -->
     <div class="card">
       <h2>Neden Bizi Tercih Etmelisiniz?</h2>
       <ul>
@@ -273,7 +295,6 @@
       </ul>
     </div>
 
-    <!-- YENİ: Hizmetler -->
     <div class="card">
       <h2>Hizmetlerimiz</h2>
       <div class="chips">
@@ -289,7 +310,6 @@
       </p>
     </div>
 
-    <!-- YENİ: Fiyatı Etkileyenler -->
     <div class="card">
       <h2>Fiyatı Neler Etkiler?</h2>
       <ul>
@@ -347,7 +367,6 @@
           </p>
         </div>
 
-        <!-- ✅ SİNCAN EKLENDİ -->
         <div class="card" style="margin:0;">
           <span class="badge">Sincan Halı Yıkama</span>
           <h2>Sincan’da Halı Yıkama</h2>
@@ -403,7 +422,6 @@
       </div>
     </div>
 
-    <!-- YENİ: Randevu Akışı -->
     <div class="card">
       <h2>Randevu Nasıl Alınır?</h2>
       <ul>
@@ -418,7 +436,6 @@
       </div>
     </div>
 
-    <!-- YENİ: SSS -->
     <div class="card">
       <h2>Sık Sorulan Sorular</h2>
 
@@ -450,8 +467,25 @@
       <p class="small">Not: Randevu saatleri ve teslim süresi halı adedi/yoğunluğa göre değişebilir.</p>
     </div>
 
+    <!-- ✅ Bilgilendirme kartı container içine alındı -->
+    <div class="card">
+      <span class="badge">Bilgilendirme</span>
+      <h2>Bu Alan Sadece Koltuk Yıkama Hizmetimizi Kapsar</h2>
+
+      <p class="small">
+        Bu bölümde yer alan tüm açıklamalar, işlemler ve temizlik detayları
+        <b>yalnızca koltuk yıkama hizmetimiz</b> için geçerlidir.
+        Halı yıkama işlemleri farklı ekipman, yöntem ve ortamda uygulanır.
+      </p>
+
+      <p class="small">
+        Koltuk yıkama hizmetimiz çoğunlukla <b>yerinde</b> yapılır ve kumaş türüne göre
+        buharlı temizlik, fırçalama ve vakumlu çekim (ekstraksiyon) yöntemleri birlikte kullanılır.
+      </p>
+    </div>
+
     <footer>
-      © <span id="year"></span> Ankara Halı & Koltuk Yıkama • Tüm hakları saklıdır.
+      ©️ <span id="year"></span> Ankara Halı & Koltuk Yıkama • Tüm hakları saklıdır.
     </footer>
 
   </div>
@@ -461,19 +495,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-<div class="card">
-  <span class="badge">Bilgilendirme</span>
-  <h2>Bu Alan Sadece Koltuk Yıkama Hizmetimizi Kapsar</h2>
 
-  <p class="small">
-    Bu bölümde yer alan tüm açıklamalar, işlemler ve temizlik detayları
-    <b>yalnızca koltuk yıkama hizmetimiz</b> için geçerlidir.
-    Halı yıkama işlemleri farklı ekipman, yöntem ve ortamda uygulanır.
-  </p>
-
-  <p class="small">
-    Koltuk yıkama hizmetimiz çoğunlukla <b>yerinde</b> yapılır ve kumaş türüne göre
-    buharlı temizlik, fırçalama ve vakumlu çekim (ekstraksiyon) yöntemleri birlikte kullanılır.
-  </p>
-</div>
 </body>
+</html>
