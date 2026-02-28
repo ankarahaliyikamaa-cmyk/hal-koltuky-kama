@@ -49,42 +49,74 @@
 
   <style>
     :root{
-      --bg:#f5f5f5;
+      --bg:#f4f6fb;
       --card:#ffffff;
-      --text:#1f2937;
-      --muted:#6b7280;
+      --text:#0f172a;
+      --muted:#64748b;
       --blue:#2563eb;
-      --green:#25D366;
-      --shadow: 0 10px 25px rgba(0,0,0,.08);
-      --radius: 16px;
+      --blue2:#1d4ed8;
+      --green:#22c55e;
+      --green2:#16a34a;
+      --shadow: 0 18px 45px rgba(15, 23, 42, .10);
+      --shadow2: 0 10px 25px rgba(15, 23, 42, .08);
+      --radius: 18px;
+      --radius2: 22px;
+      --ring: 0 0 0 6px rgba(37, 99, 235, .12);
+      --max: 1040px;
     }
+
     *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
+      background:
+        radial-gradient(1200px 600px at 15% -10%, rgba(37,99,235,.16), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(34,197,94,.12), transparent 55%),
+        var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
     }
+
+    a{color:inherit}
+
+    /* HERO */
     header{
-      background: linear-gradient(135deg,#111827,#2563eb);
+      position: relative;
+      overflow:hidden;
       color:#fff;
-      padding: 24px 14px;
+      padding: 26px 14px 18px;
       text-align:center;
+      background:
+        radial-gradient(900px 400px at 20% 10%, rgba(255,255,255,.18), transparent 60%),
+        linear-gradient(135deg, #0b1220, #1d4ed8);
     }
-    header h1{margin:0;font-size:26px}
-    header p{margin:10px 0 0;color:rgba(255,255,255,.88)}
+    header:after{
+      content:"";
+      position:absolute;
+      inset:-60px -80px auto auto;
+      width:360px;height:360px;
+      background: radial-gradient(circle at 30% 30%, rgba(34,197,94,.28), transparent 60%);
+      transform: rotate(18deg);
+      pointer-events:none;
+    }
+    header h1{margin:0;font-size:28px;letter-spacing:.2px}
+    header p{margin:10px 0 0;color:rgba(255,255,255,.88);font-weight:600}
+
+    /* WRAP */
     .container{
-      max-width: 980px;
+      max-width: var(--max);
       margin: 0 auto;
       padding: 16px;
     }
+
+    /* BUTTONS */
     .actions{
       display:flex;
       gap:12px;
       justify-content:center;
       flex-wrap:wrap;
-      margin: 16px 0 6px;
+      margin: 14px 0 6px;
     }
     .btn{
       display:inline-flex;
@@ -92,33 +124,47 @@
       justify-content:center;
       gap:10px;
       padding: 14px 18px;
-      border-radius: 14px;
+      border-radius: 16px;
       color:#fff;
       text-decoration:none;
-      font-weight:700;
-      min-width: 210px;
-      box-shadow: var(--shadow);
+      font-weight:800;
+      min-width: 220px;
+      box-shadow: var(--shadow2);
+      transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+      border: 1px solid rgba(255,255,255,.15);
+      user-select:none;
     }
-    .btn-call{background: var(--blue);}
-    .btn-wa{background: var(--green);}
+    .btn:hover{transform: translateY(-1px); filter: brightness(1.02); box-shadow: var(--shadow);}
+    .btn:active{transform: translateY(0px) scale(.99)}
+    .btn-call{background: linear-gradient(135deg, var(--blue), var(--blue2));}
+    .btn-wa{background: linear-gradient(135deg, var(--green), var(--green2));}
+
     .note{
       text-align:center;
       color: var(--muted);
       margin: 10px 0 18px;
       font-size: 14px;
+      font-weight: 700;
     }
+
+    /* CARDS */
     .card{
-      background: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      background: rgba(255,255,255,.82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(15, 23, 42, .06);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow2);
       padding: 18px;
       margin: 14px 0;
       text-align:left;
     }
     .card h2{
       margin:0 0 10px;
-      font-size: 20px;
+      font-size: 22px;
+      letter-spacing:.1px;
     }
+
     .grid{
       display:grid;
       grid-template-columns: 1fr;
@@ -127,49 +173,44 @@
     @media (min-width: 860px){
       .grid{ grid-template-columns: 1fr 1fr; }
     }
+
     .badge{
       display:inline-block;
       font-size:12px;
-      padding: 6px 10px;
+      padding: 7px 11px;
       border-radius: 999px;
-      background:#eef2ff;
-      color:#3730a3;
+      background: rgba(37,99,235,.10);
+      color:#1d4ed8;
       margin-bottom: 10px;
-      font-weight: 700;
+      font-weight: 900;
+      letter-spacing:.3px;
     }
-    ul{
-      margin:10px 0 0;
-      padding-left: 18px;
-    }
+
+    ul{margin:10px 0 0;padding-left: 18px}
     li{ margin: 7px 0; }
+
     .map-wrap{
       overflow:hidden;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow2);
+      border: 1px solid rgba(15, 23, 42, .06);
     }
-    .whatsapp-fixed{
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      background: var(--green);
-      color:#fff;
-      padding: 14px 16px;
-      border-radius: 999px;
-      font-weight: 800;
-      text-decoration:none;
-      box-shadow: 0 10px 25px rgba(0,0,0,.22);
-    }
+
     footer{
       text-align:center;
       color: var(--muted);
-      padding: 22px 10px 90px;
+      padding: 22px 10px 110px;
       font-size: 13px;
+      font-weight: 700;
     }
+
     .small{
       color: var(--muted);
       font-size: 14px;
       margin-top: 6px;
+      font-weight: 600;
     }
+
     .cta-bar{
       display:flex;
       gap:12px;
@@ -177,27 +218,28 @@
       margin-top: 12px;
     }
     .cta-bar a{flex:1}
+
     details{
-      background:#fff;
-      border-radius: 14px;
-      box-shadow: var(--shadow);
+      background: rgba(255,255,255,.86);
+      border-radius: 16px;
+      border: 1px solid rgba(15, 23, 42, .06);
+      box-shadow: var(--shadow2);
       padding: 14px 16px;
       margin: 10px 0;
     }
-    summary{
-      cursor:pointer;
-      font-weight: 800;
-    }
+    summary{cursor:pointer;font-weight: 900}
+
+    /* CHIPS */
     .chips{
       display:flex;
       flex-wrap:wrap;
-      gap:8px;
+      gap:9px;
       margin-top: 10px;
     }
     .chip{
       background:#f1f5f9;
       border:1px solid #e2e8f0;
-      padding:6px 10px;
+      padding:7px 11px;
       border-radius: 999px;
       font-size: 13px;
       color:#0f172a;
@@ -205,32 +247,108 @@
       display:inline-flex;
       align-items:center;
       gap:6px;
+      font-weight: 800;
+      transition: .15s ease;
+      white-space: nowrap;
     }
     .chip:hover{
       background:#eaf2ff;
       border-color:#c7ddff;
+      transform: translateY(-1px);
     }
 
-    /* ✅ GALERİ */
+    /* ✅ GALERİ (Premium + Mobil aralık fix) */
     .gallery{
       display:grid;
-      grid-template-columns: 1fr;
-      gap:14px;
-      margin-top:14px;
+      grid-template-columns: 1fr 1fr;   /* mobilde 2'li */
+      gap: 10px;                        /* ✅ mobil aralık */
+      margin-top: 14px;
+    }
+    .gallery figure{
+      margin:0;
+      position: relative;
+      border-radius: 18px;
+      overflow:hidden;
+      background:#0b1220;
+      box-shadow: var(--shadow2);
+      border: 1px solid rgba(15, 23, 42, .06);
+      aspect-ratio: 1 / 1;             /* ✅ hepsi aynı ölçü, taşma yok */
     }
     .gallery img{
       width:100%;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,.12);
-      transition: .25s ease;
+      height:100%;
+      object-fit: cover;
+      display:block;
+      transform: scale(1.01);
+      transition: transform .28s ease, filter .28s ease;
+      filter: saturate(1.03) contrast(1.03);
     }
-    .gallery img:hover{
-      transform: scale(1.02);
+    .gallery figure:hover img{
+      transform: scale(1.06);
+      filter: saturate(1.08) contrast(1.06);
     }
+
     @media (min-width: 860px){
       .gallery{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr); /* desktop 3'lü */
+        gap: 14px;
       }
+    }
+
+    /* WhatsApp Floating */
+    .whatsapp-fixed{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: linear-gradient(135deg, var(--green), var(--green2));
+      color:#fff;
+      padding: 14px 16px;
+      border-radius: 999px;
+      font-weight: 900;
+      text-decoration:none;
+      box-shadow: 0 14px 35px rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.25);
+      transition: transform .15s ease, filter .15s ease;
+      z-index: 50;
+    }
+    .whatsapp-fixed:hover{transform: translateY(-1px); filter: brightness(1.02);}
+
+    /* ✅ Mobilde altta sabit premium CTA (ajans işi) */
+    .mobile-cta{
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 10px 12px;
+      background: rgba(244,246,251,.78);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(15,23,42,.08);
+      z-index: 60;
+    }
+    .mobile-cta .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .mobile-cta a{
+      min-width: unset;
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: 900;
+      justify-content:center;
+      box-shadow: var(--shadow2);
+    }
+    @media (min-width: 860px){
+      .mobile-cta{display:none;}
+    }
+
+    /* küçük iyileştirme */
+    .focus-ring:focus{
+      outline: none;
+      box-shadow: var(--ring), var(--shadow2);
     }
   </style>
 </head>
@@ -245,8 +363,8 @@
   <div class="container">
 
     <div class="actions">
-      <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
-      <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a class="btn btn-call focus-ring" href="tel:+905362333675">📞 Hemen Ara</a>
+      <a class="btn btn-wa focus-ring" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
     </div>
 
     <div class="note">
@@ -286,23 +404,23 @@
       </p>
 
       <div class="cta-bar">
-        <a class="btn btn-call" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
-        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp’tan Yaz</a>
+        <a class="btn btn-call focus-ring" href="tel:+905362333675">📞 Fiyat Al / Randevu</a>
+        <a class="btn btn-wa focus-ring" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp’tan Yaz</a>
       </div>
     </div>
 
-    <!-- ✅ FOTO GALERİ (Haritanın altına eklendi) -->
+    <!-- ✅ FOTO GALERİ -->
     <div class="card">
       <h2>Halı Yıkama Tesisimiz</h2>
       <p class="small">Bazı çalışma görüntülerimiz:</p>
 
       <div class="gallery">
-        <img src="/images/ankara-hali-yikama-1.jpg" alt="Ankara halı yıkama tesisi" loading="lazy">
-        <img src="/images/ankara-hali-yikama-2.jpg" alt="Halı şampuanlama ve fırçalama" loading="lazy">
-        <img src="/images/ankara-hali-yikama-3.jpg" alt="Halı durulama ve sıkma sistemi" loading="lazy">
-        <img src="/images/ankara-hali-yikama-4.jpg" alt="Paketlenmiş halılar teslim için hazır" loading="lazy">
-        <img src="/images/ankara-hali-yikama-5.jpg" alt="Profesyonel halı yıkama Ankara" loading="lazy">
-        <img src="/images/ankara-hali-yikama-6.jpg" alt="Yaprak Halı Yıkama servis aracı" loading="lazy">
+        <figure><img src="/images/ankara-hali-yikama-1.jpg" alt="Ankara halı yıkama tesisi" loading="lazy"></figure>
+        <figure><img src="/images/ankara-hali-yikama-2.jpg" alt="Halı şampuanlama ve fırçalama" loading="lazy"></figure>
+        <figure><img src="/images/ankara-hali-yikama-3.jpg" alt="Halı durulama ve sıkma sistemi" loading="lazy"></figure>
+        <figure><img src="/images/ankara-hali-yikama-4.jpg" alt="Paketlenmiş halılar teslim için hazır" loading="lazy"></figure>
+        <figure><img src="/images/ankara-hali-yikama-5.jpg" alt="Profesyonel halı yıkama Ankara" loading="lazy"></figure>
+        <figure><img src="/images/ankara-hali-yikama-6.jpg" alt="Yaprak Halı Yıkama servis aracı" loading="lazy"></figure>
       </div>
     </div>
 
@@ -316,9 +434,7 @@
         <li><b>Sıkma & kurutma:</b> Santrifüj sıkma ile su atılır, kontrollü ortamda kurutulur.</li>
         <li><b>Paketleme & teslim:</b> Hijyenik şekilde paketlenip randevunuza göre teslim edilir.</li>
       </ul>
-      <p class="small">
-        Not: Yün ve hassas halılarda daha nazik ürünler ve düşük devir fırçalama uygulanır.
-      </p>
+      <p class="small">Not: Yün ve hassas halılarda daha nazik ürünler ve düşük devir fırçalama uygulanır.</p>
     </div>
 
     <div class="card">
@@ -407,7 +523,7 @@
           <span class="badge">Sincan Halı Yıkama</span>
           <h2>Sincan’da Halı Yıkama</h2>
           <p>
-            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</bdır. Halının diplerinde biriken toz ve kum
+            Sincan bölgesinde halı yıkamada ilk adımımız <b>derin toz alma</b>dır. Halının diplerinde biriken toz ve kum
             alınmadan yapılan yıkama, kirin halıya daha çok işlemesine sebep olabilir. Bu yüzden önce tozu tamamen çıkarırız.
           </p>
           <p>
@@ -467,8 +583,8 @@
         <li><b>4)</b> Alım–yıkama–kurutma–teslim süreci tamamlanır.</li>
       </ul>
       <div class="cta-bar">
-        <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
-        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="btn btn-call focus-ring" href="tel:+905362333675">📞 Hemen Ara</a>
+        <a class="btn btn-wa focus-ring" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
       </div>
     </div>
 
@@ -498,8 +614,8 @@
 
     <div class="card">
       <h2>Hızlı İletişim</h2>
-      <p><b>Telefon:</b> <a href="tel:+905362333675">+90 536 233 36 75</a></p>
-      <p><b>WhatsApp:</b> <a href="https://wa.me/905362333675" target="_blank" rel="noopener">Mesaj gönder</a></p>
+      <p><b>Telefon:</b> <a class="focus-ring" href="tel:+905362333675">+90 536 233 36 75</a></p>
+      <p><b>WhatsApp:</b> <a class="focus-ring" href="https://wa.me/905362333675" target="_blank" rel="noopener">Mesaj gönder</a></p>
       <p class="small">Not: Randevu saatleri ve teslim süresi halı adedi/yoğunluğa göre değişebilir.</p>
     </div>
 
@@ -525,7 +641,15 @@
 
   </div>
 
-  <a class="whatsapp-fixed" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+  <!-- Mobil alt CTA -->
+  <div class="mobile-cta" aria-label="Hızlı iletişim">
+    <div class="wrap">
+      <a class="btn btn-call focus-ring" href="tel:+905362333675">📞 Ara</a>
+      <a class="btn btn-wa focus-ring" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+  </div>
+
+  <a class="whatsapp-fixed focus-ring" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
