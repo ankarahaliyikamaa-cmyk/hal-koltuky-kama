@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <link rel="icon" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-655401278"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-655401278');
-  </script>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
   <title>Ankara Halı & Koltuk Yıkama | Yaprak Halı Yıkama</title>
 
   <!-- Google Search Console -->
@@ -31,17 +25,30 @@
   <meta property="og:url" content="https://yaprakhaliyikama.net/" />
   <meta property="og:image" content="https://yaprakhaliyikama.net/images/ankara-hali-yikama-1.jpg" />
 
-  <!-- LocalBusiness Schema -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-655401278"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-655401278');
+  </script>
+
+  <!-- ✅ LocalBusiness Schema (TEK + DOĞRU) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Yaprak Halı Yıkama",
+    "image": "https://yaprakhaliyikama.net/favicon.png",
+    "url": "https://yaprakhaliyikama.net/",
     "telephone": "+905362333675",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Ankara",
-      "addressRegion": "TR"
+      "streetAddress": "Şehit Hikmet Özer Caddesi No:113/8",
+      "addressLocality": "Etimesgut",
+      "addressRegion": "Ankara",
+      "addressCountry": "TR"
     },
     "areaServed": [
       "Çankaya",
@@ -55,8 +62,7 @@
       "İncek",
       "Alacaatlı",
       "Çayyolu"
-    ],
-    "url": "https://yaprakhaliyikama.net"
+    ]
   }
   </script>
 
@@ -86,7 +92,7 @@
       line-height: 1.65;
     }
 
-    /* HERO (Premium) */
+    /* HERO */
     header{
       position: relative;
       overflow:hidden;
@@ -239,7 +245,7 @@
       background:#fff;
     }
 
-    /* ✅ Chips (Mobilde boşluk bırakmasın diye GRID yaptım) */
+    /* Chips */
     .chips{
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -265,6 +271,7 @@
       transition: .15s ease;
       text-align:center;
       min-height: 44px;
+      overflow-wrap:anywhere;
     }
     .chip:hover{
       background:#eaf2ff;
@@ -282,7 +289,7 @@
       .grid{ grid-template-columns: 1fr 1fr; }
     }
 
-    /* ✅ Gallery (mobil aralık + premium) */
+    /* Gallery */
     .gallery{
       display:grid;
       grid-template-columns: 1fr;
@@ -346,7 +353,7 @@
       z-index: 50;
     }
 
-    /* ✅ Mobil sabit alt bar (premium) */
+    /* Mobil sabit alt bar */
     .bottom-cta{
       position: fixed;
       left: 10px;
@@ -373,11 +380,30 @@
     .bottom-cta .b-call{ background: linear-gradient(135deg,#1d4ed8,#2563eb); }
     .bottom-cta .b-wa{ background: linear-gradient(135deg,#16a34a,#25D366); }
 
-    /* Mobilde alt bar açık, sağdaki yuvarlak WhatsApp gizli (ikisi birden şişmesin) */
     @media (max-width: 860px){
       .bottom-cta{ display:flex; }
       .whatsapp-fixed{ display:none; }
       body{ padding-bottom: 88px; }
+    }
+
+    /* Hakkımızda (inline yerine sınıf) */
+    .about{
+      padding:30px 20px;
+      max-width:1100px;
+      margin:40px auto 0;
+      background:#f9fafb;
+      border-radius:14px;
+      border: 1px solid rgba(15,23,42,.06);
+    }
+    .about h2{font-size:28px; margin:0 0 15px;}
+    .about p{line-height:1.8; margin:0 0 12px;}
+    .about .info{
+      margin-top:20px;
+      padding:15px;
+      background:white;
+      border-radius:10px;
+      border:1px solid #e5e7eb;
+      line-height:1.8;
     }
 
     footer{
@@ -389,31 +415,6 @@
     }
   </style>
 </head>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Yaprak Halı Yıkama",
-  "image": "https://yaprakhaliyikama.net/favicon.png",
-  "url": "https://yaprakhaliyikama.net/",
-  "telephone": "+905362333675",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Şehit Hikmet Özer Caddesi No:113/8",
-    "addressLocality": "Etimesgut",
-    "addressRegion": "Ankara",
-    "addressCountry": "TR"
-  },
-  "areaServed": [
-    "Etimesgut",
-    "Çayyolu",
-    "Alacaatlı",
-    "Ümitköy",
-    "Yaşamkent",
-    "Bağlıca"
-  ]
-}
-</script>
 
 <body>
 
@@ -480,7 +481,6 @@
       </div>
     </div>
 
-    <!-- ✅ FOTO GALERİ -->
     <div class="card">
       <h2>Halı Yıkama Tesisimiz</h2>
       <p class="small">Bazı çalışma görüntülerimiz:</p>
@@ -538,10 +538,9 @@
 
     <div class="card">
       <h2>Hizmetlerimiz</h2>
-      <div class="chips" style="grid-template-columns: 1fr 1fr;">
-        <a href="/koltuk-yikama.html">Koltuk Yıkama</a>
+      <div class="chips">
+        <a class="chip" href="/koltuk-yikama.html">Koltuk Yıkama</a>
         <span class="chip">Halı Yıkama</span>
-        <span class="chip">Koltuk Yıkama</span>
         <span class="chip">Yatak Yıkama</span>
         <span class="chip">Sandalye / Kanepe</span>
         <span class="chip">Leke & Koku Giderme</span>
@@ -709,21 +708,28 @@
       <p class="small">Not: Randevu saatleri ve teslim süresi halı adedi/yoğunluğa göre değişebilir.</p>
     </div>
 
-    <div class="card">
-      <span class="badge">Bilgilendirme</span>
-      <h2>Bu Alan Sadece Koltuk Yıkama Hizmetimizi Kapsar</h2>
+    <!-- ✅ HAKKIMIZDA (container içinde, düzgün ölçekli) -->
+    <section id="hakkimizda" class="about">
+      <h2>Hakkımızda</h2>
 
-      <p class="small">
-        Bu bölümde yer alan tüm açıklamalar, işlemler ve temizlik detayları
-        <b>yalnızca koltuk yıkama hizmetimiz</b> için geçerlidir.
-        Halı yıkama işlemleri farklı ekipman, yöntem ve ortamda uygulanır.
+      <p>
+        <strong>Yaprak Halı Yıkama</strong>, Ankara Etimesgut merkezli profesyonel halı ve koltuk yıkama firmasıdır.
+        Şehit Hikmet Özer Caddesi No:113/8 Etimesgut / Ankara adresinde hizmet vermekteyiz.
       </p>
 
-      <p class="small">
-        Koltuk yıkama hizmetimiz çoğunlukla <b>yerinde</b> yapılır ve kumaş türüne göre
-        buharlı temizlik, fırçalama ve vakumlu çekim (ekstraksiyon) yöntemleri birlikte kullanılır.
+      <p>
+        Çayyolu, Alacaatlı, Ümitköy, Yaşamkent, Bağlıca, Etimesgut ve çevresinde
+        adresten alım–teslim hizmeti sunuyoruz. Hijyenik yıkama, leke ve koku giderme
+        işlemleri profesyonel ekipmanlarla yapılmaktadır.
       </p>
-    </div>
+
+      <div class="info">
+        <strong>İletişim Bilgileri</strong><br><br>
+        📞 Telefon: <a href="tel:05362333675">0536 233 36 75</a><br>
+        📍 Adres: Şehit Hikmet Özer Caddesi No:113/8 Etimesgut / Ankara<br>
+        🕘 Çalışma Saatleri: 08:00 – 20:00
+      </div>
+    </section>
 
     <footer>
       ©️ <span id="year"></span> Yaprak Halı Yıkama • Tüm hakları saklıdır.
@@ -743,26 +749,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-<section id="hakkimizda" style="padding:30px 20px; max-width:1100px; margin:40px auto; background:#f9fafb; border-radius:14px;">
-  <h2 style="font-size:28px; margin-bottom:15px;">Hakkımızda</h2>
 
-  <p style="line-height:1.8; margin-bottom:12px;">
-    <strong>Yaprak Halı Yıkama</strong>, Ankara Etimesgut merkezli profesyonel halı ve koltuk yıkama firmasıdır.
-    Şehit Hikmet Özer Caddesi No:113/8 Etimesgut / Ankara adresinde hizmet vermekteyiz.
-  </p>
-
-  <p style="line-height:1.8; margin-bottom:12px;">
-    Çayyolu, Alacaatlı, Ümitköy, Yaşamkent, Bağlıca, Etimesgut ve çevresinde
-    adresinden alım–teslim hizmeti sunuyoruz. Hijyenik yıkama, leke ve koku giderme
-    işlemleri profesyonel ekipmanlarla yapılmaktadır.
-  </p>
-
-  <div style="margin-top:20px; padding:15px; background:white; border-radius:10px; border:1px solid #e5e7eb;">
-    <strong>İletişim Bilgileri</strong><br><br>
-    📞 Telefon: <a href="tel:05362333675">0536 233 36 75</a><br>
-    📍 Adres: Şehit Hikmet Özer Caddesi No:113/8 Etimesgut / Ankara<br>
-    🕘 Çalışma Saatleri: 08:00 – 20:00
-  </div>
-</section>
 </body>
 </html>
