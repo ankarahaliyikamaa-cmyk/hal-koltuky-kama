@@ -231,12 +231,15 @@
       grid-template-columns: 1fr;
       gap:14px;
     }
-    @media (min-width: 860px){
-      .grid{ grid-template-columns: 1fr 1fr; }
-      .hero h1{ font-size: 44px; }
-      .hero p{ font-size: 20px; }
-      header{ min-height: 460px; }
-    }
+    @media (max-width: 860px){
+  header{ 
+    min-height: 360px; 
+    padding: 24px 14px 14px;
+  }
+  .hero h1{ font-size: 32px; }
+  .hero p{ font-size: 16px; }
+  .hero .sub{ font-size: 14px; }
+}
 
     /* Chips */
     .chips{
