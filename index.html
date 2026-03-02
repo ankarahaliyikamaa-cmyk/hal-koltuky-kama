@@ -488,14 +488,11 @@
     .bottom-cta .b-call{ background: linear-gradient(135deg,#1d4ed8,#2563eb); }
     .bottom-cta .b-wa{ background: linear-gradient(135deg,#16a34a,#25D366); }
 
-    @media (max-width: 860px){
-      .bottom-cta{ display:flex; }
-      .whatsapp-fixed{ display:none; }
-      body{ padding-bottom: 92px; }
-      .rating-card{ flex-direction: column; align-items: flex-start; }
-      .rating-cta{ width:100%; }
-      .mini{ flex:1; min-width: 0; }
-    }
+   @media (max-width: 860px){
+  .bottom-cta{ display:flex; }
+  .whatsapp-fixed{ display:none; }
+  body{ padding-bottom: 150px; } /* ✅ bindirmeyi bitirir */
+}
 
     footer{
       text-align:center;
