@@ -1,72 +1,579 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Etimesgut Halı Yıkama | Yaprak Halı Yıkama</title>
-<meta name="description" content="Etimesgut halı yıkama hizmeti. Adresten alım–teslim, hijyenik yıkama, leke ve koku giderme. 5.0 Google puanı ile güvenilir hizmet.">
+  <title>Etimesgut Halı Yıkama | Adresten Alım–Teslim • Yaprak Halı Yıkama</title>
+  <meta name="description" content="Etimesgut halı yıkama hizmeti: adresten alım–teslim, toz alma, otomatik makinede yıkama, kalıntısız durulama, kontrollü kurutma, hijyenik paketleme. Hızlı randevu için arayın/WhatsApp." />
+  <link rel="canonical" href="https://yaprakhaliyikama.net/etimesgut-hali-yikama.html" />
 
-<link rel="canonical" href="https://yaprakhaliyikama.net/etimesgut-hali-yikama.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Etimesgut Halı Yıkama | Yaprak Halı Yıkama" />
+  <meta property="og:description" content="Adresten alım–teslim • Hijyenik yıkama • Kalıntısız durulama • Etimesgut hızlı servis" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yaprakhaliyikama.net/etimesgut-hali-yikama.html" />
+  <meta property="og:image" content="https://yaprakhaliyikama.net/images/hali-sirtinda-tasima.jpg" />
 
-<style>
-body{font-family:Arial;margin:0;padding:0;line-height:1.6;background:#f9fafb;color:#111}
-.container{max-width:1000px;margin:auto;padding:20px}
-h1{font-size:28px;margin-bottom:10px}
-h2{margin-top:30px}
-.btn{
-display:inline-block;
-background:#2563eb;
-color:#fff;
-padding:12px 18px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-margin-top:10px;
-}
-</style>
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Yaprak Halı Yıkama",
+    "url": "https://yaprakhaliyikama.net/",
+    "telephone": "+905362333675",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Şehit Hikmet Özer Caddesi No:113/8",
+      "addressLocality": "Etimesgut",
+      "addressRegion": "Ankara",
+      "addressCountry": "TR"
+    },
+    "areaServed": ["Etimesgut","Eryaman","Bağlıca","Çayyolu","Ümitköy","Yaşamkent","Batıkent","Sincan","İncek","Alacaatlı"],
+    "image": "https://yaprakhaliyikama.net/images/hali-sirtinda-tasima.jpg"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#0b1220;
+      --muted:#6b7280;
+      --blue:#2563eb;
+      --green:#22c55e;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+      --shadow2: 0 16px 52px rgba(0,0,0,.14);
+      --radius: 18px;
+      --ring: 0 0 0 4px rgba(37,99,235,.14);
+      --gold:#f5b301;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(1100px 700px at 10% -10%, rgba(37,99,235,.10), transparent 55%),
+        radial-gradient(900px 700px at 90% 0%, rgba(34,197,94,.08), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    /* Header / Hero */
+    header{
+      position:relative;
+      overflow:hidden;
+      padding: 26px 14px 18px;
+      color:#fff;
+      background:
+        linear-gradient(120deg, rgba(17,24,39,.92), rgba(37,99,235,.88)),
+        url("/images/hali-sirtinda-tasima.jpg");
+      background-size:cover;
+      background-position:center;
+    }
+    header:before{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(120deg, rgba(17,24,39,.74), rgba(37,99,235,.52));
+      pointer-events:none;
+    }
+    .hero{
+      position:relative;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align:center;
+      padding: 10px 0 6px;
+    }
+    .hero h1{
+      margin:0;
+      font-size: 32px;
+      letter-spacing:.2px;
+      text-shadow: 0 12px 30px rgba(0,0,0,.35);
+    }
+    .hero p{
+      margin: 10px 0 0;
+      opacity:.95;
+      font-weight:800;
+      text-shadow: 0 10px 26px rgba(0,0,0,.32);
+    }
+    .hero .sub{
+      margin-top:10px;
+      opacity:.92;
+      font-weight:700;
+    }
+    .hero-badges{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:12px;
+    }
+    .hero-badge{
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(6px);
+      padding: 8px 12px;
+      border-radius:999px;
+      font-size: 13px;
+      font-weight:900;
+    }
+
+    /* Layout */
+    .container{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* Buttons */
+    .actions{
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin: 14px 0 8px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:900;
+      min-width: 220px;
+      box-shadow: var(--shadow2);
+      transition: .18s ease;
+      transform: translateZ(0);
+    }
+    .btn:hover{transform: translateY(-1px); filter:saturate(1.03);}
+    .btn:focus{outline:none; box-shadow: var(--shadow2), var(--ring);}
+    .btn-call{background: linear-gradient(135deg,#1d4ed8,#2563eb);}
+    .btn-wa{background: linear-gradient(135deg,#16a34a,#22c55e);}
+
+    .note{
+      text-align:center;
+      color: var(--muted);
+      margin: 10px auto 18px;
+      font-size: 14px;
+      font-weight: 800;
+      max-width: 980px;
+    }
+
+    /* Card */
+    .card{
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(15,23,42,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      margin: 14px 0;
+      text-align:left;
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size: 22px;
+      letter-spacing:.1px;
+    }
+    .small{
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 6px;
+      font-weight: 700;
+    }
+    .badge{
+      display:inline-block;
+      font-size:12px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background:#eef2ff;
+      color:#3730a3;
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+    ul{ margin:10px 0 0; padding-left: 18px; }
+    li{ margin: 7px 0; }
+
+    /* Google Rating Card */
+    .rating-card{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #ffffff, #f8fafc);
+      border: 1px solid rgba(15,23,42,.08);
+      box-shadow: var(--shadow2);
+      padding: 16px;
+    }
+    .rating-left{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .google-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background:#fff;
+      border:1px solid rgba(15,23,42,.10);
+      font-weight: 900;
+      box-shadow: 0 8px 18px rgba(0,0,0,.08);
+    }
+    .g-logo{
+      display:inline-flex;
+      width:26px;height:26px;
+      align-items:center;justify-content:center;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid rgba(15,23,42,.10);
+      font-weight: 900;
+    }
+    .rating-score{
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing:.2px;
+    }
+    .stars{
+      font-size: 22px;
+      letter-spacing: 1px;
+      color: var(--gold);
+      text-shadow: 0 2px 8px rgba(245,179,1,.25);
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .rating-sub{
+      color: var(--muted);
+      font-weight: 900;
+      margin-top: 2px;
+    }
+    .rating-cta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .mini{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      color:#fff;
+      text-decoration:none;
+      font-weight: 900;
+      box-shadow: 0 12px 24px rgba(0,0,0,.12);
+      transition:.18s ease;
+      min-width: 180px;
+    }
+    .mini:hover{transform: translateY(-1px);}
+    .mini-call{background: linear-gradient(135deg,#1d4ed8,#2563eb);}
+    .mini-wa{background: linear-gradient(135deg,#16a34a,#22c55e);}
+
+    /* Gallery */
+    .gallery{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:14px;
+      margin-top:14px;
+    }
+    @media (min-width: 860px){
+      .gallery{ grid-template-columns: 1fr 1fr; }
+    }
+    .g-item{
+      position:relative;
+      overflow:hidden;
+      border-radius: 18px;
+      box-shadow: var(--shadow2);
+      border: 1px solid rgba(15,23,42,.06);
+      background:#fff;
+    }
+    .g-item img{
+      width:100%;
+      height: 100%;
+      display:block;
+      object-fit: cover;
+      transform: scale(1.01);
+      transition: .25s ease;
+    }
+    .g-item:hover img{ transform: scale(1.05); }
+    .g-cap{
+      position:absolute;
+      left:0; right:0; bottom:0;
+      padding: 10px 12px;
+      color:#fff;
+      font-weight: 900;
+      font-size: 13px;
+      background: linear-gradient(to top, rgba(0,0,0,.58), rgba(0,0,0,0));
+      letter-spacing:.2px;
+    }
+
+    /* Chips */
+    .chips{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      margin-top: 12px;
+    }
+    @media (min-width: 860px){
+      .chips{ grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    }
+    .chip{
+      background:#f1f5f9;
+      border:1px solid #e2e8f0;
+      padding:10px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      color:#0f172a;
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      font-weight: 900;
+      transition: .15s ease;
+      text-align:center;
+      min-height: 44px;
+    }
+    .chip:hover{
+      background:#eaf2ff;
+      border-color:#c7ddff;
+      transform: translateY(-1px);
+    }
+
+    /* FAQ */
+    details{
+      background:#fff;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      margin: 10px 0;
+      border: 1px solid rgba(15,23,42,.06);
+    }
+    summary{ cursor:pointer; font-weight: 900; }
+
+    /* Reveal animation */
+    .reveal{
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .reveal.is-visible{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer{
+      text-align:center;
+      color: var(--muted);
+      padding: 22px 10px 18px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+  <header>
+    <div class="hero">
+      <h1>Etimesgut Halı Yıkama</h1>
+      <p>Etimesgut • Eryaman • Bağlıca • Çayyolu • Ümitköy</p>
+      <div class="sub">Adresten alım–teslim • Hijyenik yıkama • Leke & koku giderme</div>
 
-<h1>Etimesgut Halı Yıkama</h1>
+      <div class="hero-badges">
+        <span class="hero-badge">✅ Toz Alma</span>
+        <span class="hero-badge">✅ Otomatik Makine</span>
+        <span class="hero-badge">✅ Kalıntısız Durulama</span>
+        <span class="hero-badge">✅ Kontrollü Kurutma</span>
+      </div>
+    </div>
+  </header>
 
-<p>
-Yaprak Halı Yıkama olarak Etimesgut halı yıkama hizmetini profesyonel ekipmanlarla sunuyoruz.
-Halılarınız adresinizden alınır, tesisimizde detaylı şekilde yıkanır ve hijyenik olarak teslim edilir.
-</p>
+  <div class="container">
 
-<img src="images/hali-yikama-fabrika.jpg.jfif" alt="Etimesgut halı yıkama" width="100%" style="border-radius:12px; margin:20px 0;">
+    <div class="actions reveal">
+      <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+      <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
 
-<h2>Etimesgut’ta Halı Yıkama Sürecimiz</h2>
+    <div class="note reveal">
+      Hızlı randevu • Adresten alım–teslim • Hijyenik yıkama • Kalıntısız durulama
+    </div>
 
-<p>
-Öncelikle halılarınız derin toz alma makinesi ile toz ve kumdan arındırılır.
-Ardından halı tipine uygun şampuan ile fırçalama yapılır.
-Bol su ile durulama sonrası santrifüj sıkma uygulanır ve kontrollü ortamda kurutulur.
-</p>
+    <!-- Google Memnuniyet -->
+    <div class="card reveal">
+      <span class="badge">Müşteri Memnuniyeti</span>
+      <div class="rating-card">
+        <div class="rating-left">
+          <div class="google-badge">
+            <span class="g-logo">G</span>
+            <span>Google</span>
+          </div>
+          <div>
+            <div class="rating-score">
+              5.0 <span class="stars">★★★★★</span>
+            </div>
+            <div class="rating-sub">1600+ olumlu müşteri yorumu</div>
+          </div>
+        </div>
 
-<h2>Neden Etimesgut’ta Bizi Tercih Etmelisiniz?</h2>
+        <div class="rating-cta">
+          <a class="mini mini-call" href="tel:+905362333675">📞 Fiyat Al</a>
+          <a class="mini mini-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+        </div>
+      </div>
 
-<ul>
-<li>5.0 Google puanı</li>
-<li>1600+ müşteri yorumu</li>
-<li>Adresten alım–teslim</li>
-<li>Kalıntısız durulama</li>
-<li>Hızlı randevu sistemi</li>
-</ul>
+      <p class="small" style="margin-top:12px;">
+        Etimesgut’ta halılarınızı randevuyla adresinizden alır, tesiste yıkayıp kurutarak hijyenik şekilde teslim ederiz.
+      </p>
+    </div>
 
-<h2>İletişim</h2>
+    <!-- Görseller -->
+    <div class="card reveal">
+      <h2>Etimesgut’ta Halı Yıkama Sürecimiz (Görüntüler)</h2>
+      <p class="small">Tesiste yaptığımız işlemlerden bazı kareler:</p>
 
-<p>
-📞 Telefon: <a href="tel:05362333675">0536 233 36 75</a>
-</p>
+      <div class="gallery">
+        <div class="g-item">
+          <img src="/images/hali-toz-alma.jpg" alt="Etimesgut halı toz alma işlemi" loading="lazy">
+          <div class="g-cap">Toz Alma • Dipteki kum/toz alınır</div>
+        </div>
 
-<a href="https://yaprakhaliyikama.net" class="btn">Ana Sayfaya Dön</a>
+        <div class="g-item">
+          <img src="/images/hali-otomatik-makina.jpg" alt="Otomatik halı yıkama makinesi" loading="lazy">
+          <div class="g-cap">Otomatik Makine • Fırçalama + şampuan</div>
+        </div>
 
-</div>
+        <div class="g-item">
+          <img src="/images/hali-yikama-fabrika.jpg" alt="Fabrikada halı yıkama" loading="lazy">
+          <div class="g-cap">Durulama • Kalıntısız temizlik</div>
+        </div>
 
+        <div class="g-item">
+          <img src="/images/hali-paketleme.jpg" alt="Halı paketleme" loading="lazy">
+          <div class="g-cap">Paketleme • Hijyenik ambalaj</div>
+        </div>
+
+        <div class="g-item">
+          <img src="/images/hali-servis-yukleme.jpg" alt="Servis aracına halı yükleme" loading="lazy">
+          <div class="g-cap">Servis • Alım–teslim</div>
+        </div>
+
+        <div class="g-item">
+          <img src="/images/hali-sirtinda-tasima.jpg" alt="Halı taşıma" loading="lazy">
+          <div class="g-cap">Ekip • Dikkatli taşıma</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Süreç -->
+    <div class="card reveal">
+      <h2>Etimesgut Halı Yıkama Adımları</h2>
+      <ul>
+        <li><b>1) Ön kontrol:</b> Halı tipi, leke ve koku durumu kontrol edilir.</li>
+        <li><b>2) Toz alma:</b> Derindeki toz/kum güçlü makinelerle alınır.</li>
+        <li><b>3) Otomatik yıkama:</b> Halıya uygun şampuan + fırçalama yapılır.</li>
+        <li><b>4) Durulama:</b> Köpük kalmayacak şekilde bol suyla durulanır.</li>
+        <li><b>5) Kurutma:</b> Kontrollü ortamda, nem bırakmadan kurutulur.</li>
+        <li><b>6) Paketleme & teslim:</b> Hijyenik paketlenip randevuyla teslim edilir.</li>
+      </ul>
+      <p class="small">WhatsApp’tan halı türü + ölçü/adet gönder: hızlı fiyat verelim.</p>
+    </div>
+
+    <!-- Neden Biz -->
+    <div class="card reveal">
+      <h2>Neden Etimesgut’ta Bizi Tercih Ediyorlar?</h2>
+      <ul>
+        <li><b>Kalıntısız durulama:</b> Şampuan kalmaz, sertleşme ve koku riski azalır.</li>
+        <li><b>Derin temizlik:</b> Toz alma + otomatik makine ile dip kir hedeflenir.</li>
+        <li><b>Kontrollü kurutma:</b> Nem bırakmadan teslim etmeye özen gösteririz.</li>
+        <li><b>Randevulu alım–teslim:</b> Zamanınızı bölmeden hızlı servis sağlarız.</li>
+      </ul>
+    </div>
+
+    <!-- Diğer İlçeler -->
+    <div class="card reveal">
+      <span class="badge">Diğer Bölgeler</span>
+      <div class="chips">
+        <a class="chip" href="/cayyolu-hali-yikama.html">Çayyolu</a>
+        <a class="chip" href="/umitkoy-hali-yikama.html">Ümitköy</a>
+        <a class="chip" href="/yasamkent-hali-yikama.html">Yaşamkent</a>
+        <a class="chip" href="/eryaman-hali-yikama.html">Eryaman</a>
+        <a class="chip" href="/baglica-hali-yikama.html">Bağlıca</a>
+        <a class="chip" href="/batikent-hali-yikama.html">Batıkent</a>
+        <a class="chip" href="/sincan-hali-yikama.html">Sincan</a>
+        <a class="chip" href="/incek-hali-yikama.html">İncek</a>
+        <a class="chip" href="/alacaatli-hali-yikama.html">Alacaatlı</a>
+        <a class="chip" href="/koltuk-yikama.html">Koltuk Yıkama</a>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card reveal">
+      <h2>Sık Sorulan Sorular</h2>
+
+      <details>
+        <summary>Etimesgut’ta halılar kaç günde teslim edilir?</summary>
+        <p class="small">Yoğunluğa göre değişir. Genelde yıkama+kurutma sonrası en kısa sürede teslim edilir. Net süre için arayın/yazın.</p>
+      </details>
+
+      <details>
+        <summary>Koku kalır mı?</summary>
+        <p class="small">Kalıntısız durulama + doğru kurutma ile koku problemi büyük ölçüde çözülür. Evcil hayvan kokusunda ekstra işlem yapılabilir.</p>
+      </details>
+
+      <details>
+        <summary>Yün / hassas halı yıkıyor musunuz?</summary>
+        <p class="small">Evet. Halı tipine uygun ürün ve daha nazik fırçalama uygulanır.</p>
+      </details>
+    </div>
+
+    <!-- İletişim -->
+    <div class="card reveal">
+      <h2>Hızlı İletişim</h2>
+      <p><b>Telefon:</b> <a href="tel:+905362333675">+90 536 233 36 75</a></p>
+      <p><b>WhatsApp:</b> <a href="https://wa.me/905362333675" target="_blank" rel="noopener">Mesaj gönder</a></p>
+      <p class="small">Etimesgut merkezli servis • Randevu ile alım–teslim</p>
+
+      <div class="actions" style="margin:12px 0 0;">
+        <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+        <a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <footer>
+      ©️ <span id="year"></span> Yaprak Halı Yıkama • Etimesgut Halı Yıkama
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Reveal on scroll
+    const els = document.querySelectorAll(".reveal");
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          e.target.classList.add("is-visible");
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold: 0.12});
+    els.forEach(el=>io.observe(el));
+  </script>
 </body>
 </html>
