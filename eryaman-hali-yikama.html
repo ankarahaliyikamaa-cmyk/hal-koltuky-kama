@@ -1,94 +1,201 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eryaman Halı Yıkama | Yaprak Halı Yıkama (08:00-20:00)</title>
-  <meta name="description" content="Eryaman halı yıkama: adresten alım–teslim, derin temizlik, leke & koku giderme. 08:00–20:00. 0536 233 36 75" />
-  <link rel="canonical" href="https://yaprakhaliyikama.net/eryaman-hali-yikama.html" />
-  <style>
-    :root{--bg:#f5f5f5;--card:#ffffff;--text:#1f2937;--muted:#6b7280;--blue:#2563eb;--green:#25D366;--shadow:0 10px 25px rgba(0,0,0,.08);--radius:16px}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    header{background:linear-gradient(135deg,#111827,#2563eb);color:#fff;padding:24px 14px;text-align:center}
-    header h1{margin:0;font-size:26px}
-    header p{margin:10px 0 0;color:rgba(255,255,255,.88)}
-    .top-link{display:inline-block;margin-top:10px;color:#fff;text-decoration:underline;font-weight:700;opacity:.95}
-    .container{max-width:980px;margin:0 auto;padding:16px}
-    .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:16px 0 6px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border-radius:14px;color:#fff;text-decoration:none;font-weight:700;min-width:210px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
-    .btn-call{background:#2563eb} .btn-wa{background:#25D366}
-    .note{text-align:center;color:#6b7280;margin:10px 0 18px;font-size:14px}
-    .card{background:#fff;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08);padding:18px;margin:14px 0;text-align:left}
-    .badge{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;background:#eef2ff;color:#3730a3;margin-bottom:10px;font-weight:700}
-    ul{margin:10px 0 0;padding-left:18px} li{margin:7px 0}
-    .map-wrap{overflow:hidden;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
-    .whatsapp-fixed{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,.22)}
-    footer{text-align:center;color:#6b7280;padding:22px 10px 90px;font-size:13px}
-    .small{color:#6b7280;font-size:14px;margin-top:6px}
-    details{background:#fff;border-radius:14px;box-shadow:0 10px 25px rgba(0,0,0,.08);padding:14px 16px;margin:10px 0}
-    summary{cursor:pointer;font-weight:800}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eryaman Halı Yıkama | Adresten Alım Teslim • Yaprak Halı Yıkama</title>
+
+<meta name="description" content="Eryaman halı yıkama hizmeti. Derin toz alma, otomatik makinede yıkama, kalıntısız durulama, kontrollü kurutma ve hijyenik paketleme. Eryaman ve çevresinde hızlı randevu için 0536 233 36 75.">
+
+<link rel="canonical" href="https://yaprakhaliyikama.net/eryaman-hali-yikama.html">
+
+<link rel="icon" href="favicon.png">
+
+<style>
+:root{
+--accent:#7c3aed;
+--accent2:#2563eb;
+--bg:#f8fafc;
+--text:#111827;
+--muted:#6b7280;
+--shadow:0 12px 40px rgba(0,0,0,.08);
+--radius:20px;
+--gold:#f5b301;
+}
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+}
+header{
+background:
+linear-gradient(120deg,rgba(0,0,0,.85),rgba(124,58,237,.75)),
+url("/images/hali-sirtinda-tasima.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+header h1{
+margin:0;
+font-size:32px;
+}
+header p{
+margin-top:10px;
+font-weight:700;
+opacity:.95;
+}
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+.card{
+background:white;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:22px;
+margin:18px 0;
+}
+.btn{
+display:inline-block;
+padding:14px 20px;
+border-radius:14px;
+font-weight:900;
+color:white;
+text-decoration:none;
+margin:6px;
+}
+.btn-call{background:linear-gradient(135deg,var(--accent),#6d28d9);}
+.btn-wa{background:linear-gradient(135deg,#16a34a,#22c55e);}
+.btn-ig{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#bc1888);}
+.rating{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:28px;
+font-weight:900;
+}
+.stars{
+color:var(--gold);
+font-size:22px;
+}
+.gallery{
+display:grid;
+grid-template-columns:1fr;
+gap:15px;
+margin-top:15px;
+}
+@media(min-width:800px){
+.gallery{grid-template-columns:1fr 1fr;}
+}
+.gallery img{
+width:100%;
+border-radius:16px;
+object-fit:cover;
+}
+footer{
+text-align:center;
+padding:30px 10px;
+color:var(--muted);
+font-weight:700;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Eryaman Halı Yıkama</h1>
-    <p>Eryaman • Göksu • Etimesgut • Batıkent</p>
-    <a class="top-link" href="/">← Ana Sayfa</a>
-  </header>
 
-  <div class="container">
-    <div class="actions">
-      <a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
-      <a class="btn btn-wa" href="https://wa.me/905362333675?text=Merhaba%20Eryaman%20hal%C4%B1%20y%C4%B1kama%20i%C3%A7in%20fiyat%20almak%20istiyorum" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
+<header>
+<h1>Eryaman Halı Yıkama</h1>
+<p>Eryaman • Etimesgut • Göksu • Şeker Mahallesi</p>
+<p>Adresten alım – Derin temizlik – Hijyenik teslim</p>
+</header>
 
-    <div class="note">Çalışma saatleri: <b>08:00–20:00</b> • Adresten alım–teslim • Derin temizlik</div>
+<div class="container">
 
-    <div class="card">
-      <span class="badge">Eryaman’da Halı Yıkama</span>
-      <p>Eryaman bölgesinde halılarda en önemli adım derin toz almadır. Sonrasında şampuanlama, bol suyla durulama, santrifüj sıkma ve kontrollü kurutma ile teslim ediyoruz.</p>
-      <ul>
-        <li>Derin toz alma</li>
-        <li>Kalıntısız durulama</li>
-        <li>Hızlı alım–teslim (randevu)</li>
-      </ul>
-      <p class="small">Halı türü + m²/adet → WhatsApp’tan yaz.</p>
-    </div>
+<div class="card" style="text-align:center;">
+<a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+<a class="btn btn-wa" href="https://wa.me/905362333675" target="_blank">💬 WhatsApp</a>
+<a class="btn btn-ig" href="https://www.instagram.com/yaprakhaliyikama06?igsh=M2Q2dzZ1bnJidjI0&utm_source=qr" target="_blank">📸 Instagram</a>
+</div>
 
-    <div class="card">
-      <span class="badge">Konum</span>
-      <div class="map-wrap">
-        <iframe src="https://www.google.com/maps?q=Eryaman%20Ankara&output=embed" width="100%" height="360" style="border:0;" loading="lazy"></iframe>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Sık Sorulan Sorular</h2>
-      <details><summary>Evcil hayvan kokusu çıkar mı?</summary><p class="small">Duruma göre koku giderme işlemi uygulanabilir. Foto/konum at, net konuşalım.</p></details>
-      <details><summary>Kaç günde teslim ediyorsunuz?</summary><p class="small">Yoğunluğa göre değişir. Güncel süre için ara/yaz.</p></details>
-    </div>
-
-    <footer>© <span id="year"></span> Yaprak Halı Yıkama</footer>
- <!-- ✅ Diğer Bölgeler -->
 <div class="card">
-  <h2>Diğer Bölgeler</h2>
-  <p class="small">Hizmet verdiğimiz diğer bölgeler:</p>
-  <div class="chips">
-    <a class="chip" href="/cayyolu-hali-yikama.html">Çayyolu</a>
-    <a class="chip" href="/umitkoy-hali-yikama.html">Ümitköy</a>
-    <a class="chip" href="/yasamkent-hali-yikama.html">Yaşamkent</a>
-    <a class="chip" href="/eryaman-hali-yikama.html">Eryaman</a>
-    <a class="chip" href="/etimesgut-hali-yikama.html">Etimesgut</a>
-    <a class="chip" href="/baglica-hali-yikama.html">Bağlıca</a>
-    <a class="chip" href="/sincan-hali-yikama.html">Sincan</a>
-    <a class="chip" href="/batikent-hali-yikama.html">Batıkent</a>
-    <a class="chip" href="/incek-hali-yikama.html">İncek</a>
-    <a class="chip" href="/alacaatli-hali-yikama.html">Alacaatlı</a>
-  </div>
-</div> </div>
+<div class="rating">
+5.0 <span class="stars">★★★★★</span>
+</div>
+<p><b>1600+ olumlu Google yorumu</b></p>
+<p>
+Eryaman halı yıkama hizmetimizde önceliğimiz halının yalnızca yüzeyini değil,
+dip kısmını da temizlemektir. Özellikle Eryaman bölgesinde yoğun kullanılan
+salon halıları ve çocuk odası halılarında derin toz alma işlemi kritik önem taşır.
+</p>
+</div>
 
-  <a class="whatsapp-fixed" href="https://wa.me/905362333675" target="_blank" rel="noopener">💬 WhatsApp</a>
-  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<div class="card">
+<h2>Eryaman’da Halı Yıkama Sürecimiz</h2>
+<p>
+İlk aşamada halılar güçlü makinelerle <b>toz ve kumdan arındırılır</b>.
+Toz alma yapılmadan yıkama işlemi kirin çamurlaşmasına sebep olabilir.
+Bu nedenle işlemin temelini derin temizlik oluşturur.
+</p>
+<p>
+Ardından halı tipine uygun şampuan ile <b>otomatik makinede fırçalama</b> uygulanır.
+Bol su ile <b>kalıntısız durulama</b> yapılır.
+Santrifüj sıkma sonrası halı kontrollü ortamda kurutulur.
+Nem bırakmadan paketlenir ve randevu saatinde teslim edilir.
+</p>
+</div>
+
+<div class="card">
+<h2>Hangi Hizmetleri Sunuyoruz?</h2>
+<ul>
+<li>Makine halısı yıkama</li>
+<li>Shaggy halı temizliği</li>
+<li>Yün halı yıkama</li>
+<li>Koltuk yıkama (yerinde)</li>
+<li>Yerinde temizlik hizmeti</li>
+<li>Leke & koku giderme</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Çalışma Görselleri</h2>
+
+<div class="gallery">
+<img src="/images/hali-toz-alma.jpg" alt="Eryaman halı toz alma">
+<img src="/images/hali-otomatik-makina.jpg" alt="Eryaman otomatik halı yıkama">
+<img src="/images/hali-yikama-fabrika.jpg" alt="Eryaman halı yıkama tesisi">
+<img src="/images/hali-paketleme.jpg" alt="Eryaman halı paketleme">
+<img src="/images/koltuk-yikama.jpg" alt="Eryaman koltuk yıkama">
+<img src="/images/yerde-yikama.jpg" alt="Eryaman yerinde yıkama">
+</div>
+
+</div>
+
+<div class="card">
+<h2>Neden Eryaman’da Bizi Tercih Etmelisiniz?</h2>
+<p>
+✔ Derin toz alma sistemi<br>
+✔ Kalıntısız durulama<br>
+✔ Nem bırakmadan teslim<br>
+✔ Adresten alım–teslim<br>
+✔ 5.0 Google puanı
+</p>
+</div>
+
+</div>
+
+<footer>
+© <span id="year"></span> Yaprak Halı Yıkama • Eryaman
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
