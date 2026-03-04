@@ -1,95 +1,178 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<!doctype html>
+<html lang="tr">
+<head>
 
-  <url>
-    <loc>https://yaprakhaliyikama.net/</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- İlçe sayfaları -->
-  <url>
-    <loc>https://yaprakhaliyikama.net/cayyolu-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/umitkoy-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/yasamkent-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/eryaman-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/etimesgut-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/baglica-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/sincan-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/batikent-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/incek-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/alacaatli-hali-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<title>Ankara Koltuk Yıkama Fiyatları | Yaprak Halı Yıkama</title>
 
-  <!-- Hizmet sayfaları -->
-  <url>
-    <loc>https://yaprakhaliyikama.net/koltuk-yikama.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<meta name="description" content="Ankara koltuk yıkama fiyatları. Koltuk takımı yıkama fiyatı, yerinde koltuk temizleme hizmeti. Çayyolu, Etimesgut, Eryaman, Ümitköy ve çevresinde koltuk yıkama." />
 
-  <!-- Politikalar -->
-  <url>
-    <loc>https://yaprakhaliyikama.net/gizlilik-politikasi.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://yaprakhaliyikama.net/cerez-politikasi.html</loc>
-    <lastmod>2026-03-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+<link rel="canonical" href="https://yaprakhaliyikama.net/koltuk-yikama-fiyatlari.html" />
 
-</urlset>
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+<meta property="og:title" content="Ankara Koltuk Yıkama Fiyatları | Yaprak Halı Yıkama" />
+<meta property="og:description" content="Koltuk takımı 2500–3000 ₺ • Yerinde koltuk yıkama • WhatsApp’tan hızlı fiyat alın." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yaprakhaliyikama.net/koltuk-yikama-fiyatlari.html" />
+<meta property="og:image" content="https://yaprakhaliyikama.net/images/hali-sirtinda-tasima.jpg.jfif" />
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "Yaprak Halı Yıkama",
+ "image": "https://yaprakhaliyikama.net/favicon.png",
+ "url": "https://yaprakhaliyikama.net",
+ "telephone": "+905362333675",
+ "address": {
+   "@type": "PostalAddress",
+   "streetAddress": "Şehit Hikmet Özer Caddesi No:113/8",
+   "addressLocality": "Etimesgut",
+   "addressRegion": "Ankara",
+   "addressCountry": "TR"
+ },
+ "aggregateRating": {
+   "@type": "AggregateRating",
+   "ratingValue": "5",
+   "reviewCount": "1600"
+ }
+}
+</script>
+
+<style>
+:root{
+--bg:#f6f7fb;
+--card:#fff;
+--text:#111827;
+--muted:#6b7280;
+--shadow:0 10px 30px rgba(0,0,0,.08);
+--radius:18px;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+line-height:1.65;
+color:var(--text);
+background: radial-gradient(1200px 600px at 10% -10%, rgba(37,99,235,.10), transparent 55%),
+radial-gradient(900px 600px at 90% 0%, rgba(34,197,94,.08), transparent 55%),
+var(--bg);
+}
+header{
+padding:24px 14px;
+color:#fff;
+background: linear-gradient(120deg, rgba(17,24,39,.95), rgba(37,99,235,.92));
+text-align:center;
+}
+.container{
+max-width:1100px;
+margin:0 auto;
+padding:18px;
+}
+.card{
+background:#fff;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+padding:18px;
+margin:14px 0;
+}
+.actions{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:12px;
+}
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:14px 18px;
+border-radius:16px;
+color:#fff;
+text-decoration:none;
+font-weight:900;
+min-width:220px;
+}
+.btn-call{background:#2563eb;}
+.btn-wa{background:#25D366;}
+.muted{
+color:var(--muted);
+font-size:14px;
+}
+.price{
+font-size:26px;
+font-weight:900;
+padding:12px 14px;
+border-radius:16px;
+background:#f1f5f9;
+display:inline-block;
+}
+footer{
+padding:22px 10px;
+color:var(--muted);
+text-align:center;
+font-size:13px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Ankara Koltuk Yıkama Fiyatları</h1>
+<p>Yerinde koltuk yıkama • Hızlı fiyat için WhatsApp</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<div class="actions">
+<a class="btn btn-call" href="tel:+905362333675">📞 Hemen Ara</a>
+<a class="btn btn-wa" href="https://wa.me/905362333675">💬 WhatsApp</a>
+</div>
+<p class="muted">Koltuk takımının fotoğrafını WhatsApp’tan göndererek hızlı fiyat alabilirsiniz.</p>
+</div>
+
+<div class="card">
+<h2>Koltuk Takımı Fiyat Aralığı</h2>
+<div class="price">2500 – 3000 ₺</div>
+<p class="muted">Fiyat koltuk büyüklüğüne ve leke durumuna göre değişebilir.</p>
+</div>
+
+<div class="card">
+<h2>Koltuk Yıkama Nasıl Yapılır?</h2>
+<ul>
+<li>Kumaş ve leke kontrolü yapılır</li>
+<li>Uygun temizlik ürünü uygulanır</li>
+<li>Fırçalama ile kir yüzeye çıkarılır</li>
+<li>Vakumlu çekim ile kirli su alınır</li>
+<li>Havalandırma ile kuruma sağlanır</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Hizmet Bölgeleri</h2>
+<p class="muted">
+Çayyolu • Ümitköy • Yaşamkent • Bağlıca • Etimesgut • Eryaman • Batıkent • Sincan
+</p>
+</div>
+
+<footer>
+© <span id="year"></span> Yaprak Halı Yıkama
+</footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
