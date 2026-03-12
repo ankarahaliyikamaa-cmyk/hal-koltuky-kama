@@ -3,231 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Çayyolu Halı Yıkama | Yaprak Halı Yıkama 0312 244 03 04</title>
-    <meta name="description" content="Çayyolu, Ümitköy ve Konutkent'te profesyonel halı yıkama hizmeti. Yaprak Halı Yıkama ile temizlik kapınızda. Hemen arayın!">
+    <title>Çayyolu Halı Yıkama | Yaprak Halı Yıkama Profesyonel Hizmet</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* Temel Ayarlar */
-        :root {
-            --primary-color: #0056b3; /* Koyu Mavi */
-            --secondary-color: #007bff; /* Açık Mavi */
-            --accent-color: #ffc107; /* Sarı/Altın */
-            --text-color: #333;
-            --bg-color: #f4f7f6;
-        }
+        :root { --p-blue: #0056b3; --s-blue: #00b4db; --green: #28a745; --dark: #333; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; color: var(--dark); background: #fdfdfd; scroll-behavior: smooth; }
+        
+        /* Navbar */
+        nav { background: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav a { text-decoration: none; color: var(--p-blue); font-weight: bold; margin: 0 10px; font-size: 14px; }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
+        /* Header */
+        header { background: linear-gradient(rgba(0,86,179,0.8), rgba(0,180,219,0.8)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1000'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px; }
+        header h1 { font-size: 36px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        
+        /* İletişim Butonları (Hızlı Erişim) */
+        .sticky-contact { position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; }
+        .s-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); text-decoration: none; transition: 0.3s; }
+        .s-whatsapp { background: #25d366; }
+        .s-phone { background: #007bff; }
 
-        /* Header (Üst Kısım) */
-        header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom-left-radius: 50% 20px;
-            border-bottom-right-radius: 50% 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
+        .container { width: 90%; max-width: 1000px; margin: auto; padding: 40px 0; }
+        .section-title { text-align: center; color: var(--p-blue); margin-bottom: 40px; }
+        .section-title h2 { font-size: 28px; border-bottom: 3px solid var(--s-blue); display: inline-block; padding-bottom: 10px; }
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+        /* Hizmetler Grid */
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .service-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center; transition: 0.3s; border: 1px solid #eee; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-card img { width: 100%; height: 200px; object-fit: cover; }
+        .service-card h3 { padding: 15px 0 5px; color: var(--p-blue); }
+        .service-card p { padding: 0 15px 20px; font-size: 14px; color: #666; }
 
-        header p {
-            margin: 10px 0 0;
-            font-size: 18px;
-            opacity: 0.9;
-        }
+        /* Süreç Bölümü */
+        .process { background: #f0f7ff; padding: 60px 20px; text-align: center; border-radius: 30px; margin: 40px 0; }
+        .steps { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-top: 30px; }
+        .step { flex: 1; min-width: 150px; }
+        .step i { font-size: 40px; color: var(--s-blue); margin-bottom: 15px; }
 
-        /* Ana Konteyner */
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: -30px auto 40px; /* Header'ın üzerine bindirme */
-            padding: 20px;
-        }
+        /* Instagram & İletişim */
+        .cta-box { background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; border: 2px solid #eee; }
+        .main-btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; border-radius: 50px; text-decoration: none; color: white; font-weight: bold; margin: 10px; font-size: 18px; }
+        .btn-insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-call { background: var(--green); }
 
-        /* Hero Kartı */
-        .hero {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            text-align: center;
-            margin-bottom: 25px;
-        }
+        .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 30px; }
+        .tag { background: #e1ecf7; color: var(--p-blue); padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 600; }
 
-        .hero h2 {
-            color: var(--primary-color);
-            font-size: 24px;
-            margin-top: 0;
-        }
-
-        .fast-info {
-            display: inline-block;
-            background-color: #ffcccc;
-            color: #d9534f;
-            padding: 5px 15px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-
-        /* Butonlar */
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        .btn-call {
-            background: linear-gradient(135deg, #28a745 0%, #2ecc71 100%);
-        }
-
-        .btn-whatsapp {
-            background: linear-gradient(135deg, #25d366 0%, #1ebd61 100%);
-        }
-
-        .btn-instagram {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        }
-
-        /* Semt Etiketleri */
-        .districts {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 25px 0;
-        }
-
-        .tag {
-            background-color: white;
-            color: var(--primary-color);
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 600;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        /* SEO Kutusu */
-        .seo-box {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-top: 5px solid var(--accent-color);
-        }
-
-        .seo-box h3 {
-            color: var(--primary-color);
-            margin-top: 0;
-        }
-
-        /* Footer (Alt Kısım) */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: auto;
-            font-size: 14px;
-        }
-
-        footer b {
-            color: var(--accent-color);
-        }
-
-        /* Mobil Uyumluluk */
-        @media (max-width: 600px) {
-            header h1 { font-size: 26px; }
-            .btn { font-size: 18px; padding: 18px; }
-        }
+        footer { background: #222; color: white; text-align: center; padding: 40px 20px; margin-top: 60px; }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Yaprak Halı Yıkama</h1>
-    <p>Çayyolu & Ümitköy Bölge Servisi</p>
-</header>
+    <nav>
+        <a href="#hizmetler">Hizmetlerimiz</a>
+        <a href="#surec">Nasıl Yıkıyoruz?</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
 
-<div class="container">
-    <div class="hero">
-        <div class="fast-info"><i class="fas fa-bolt"></i> Hemen Teslim - Ücretsiz Servis</div>
-        <h2>Çayyolu'nun Her Yerindeyiz</h2>
-        
-        <a href="tel:03122440304" class="btn btn-call">
-            <i class="fas fa-phone-alt"></i> 0312 244 03 04
-        </a>
-        <a href="tel:05362333675" class="btn btn-call">
-            <i class="fas fa-mobile-alt"></i> 0536 233 36 75
-        </a>
-        
-        <a href="https://wa.me/905362333675?text=Merhaba, Çayyolu halı yıkama fiyatları hakkında bilgi alabilir miyim?" class="btn btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
-        </a>
+    <header>
+        <h1>Yaprak Halı Yıkama Çayyolu</h1>
+        <p>Ücretsiz Servis | Profesyonel Temizlik | Garantili Hizmet</p>
+    </header>
 
-        <a href="https://www.instagram.com/yaprakhaliyikama06?igsh=M2Q2dzZ1bnJidjI0&utm_source=qr" target="_blank" class="btn btn-instagram">
-            <i class="fab fa-instagram"></i> Instagram'da Bizi Takip Edin
-        </a>
+    <div class="sticky-contact">
+        <a href="https://wa.me/905362333675" class="s-btn s-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:03122440304" class="s-btn s-phone"><i class="fas fa-phone"></i></a>
     </div>
 
-    <div class="districts">
-        <span class="tag">#Çayyolu</span>
-        <span class="tag">#Ümitköy</span>
-        <span class="tag">#Konutkent</span>
-        <span class="tag">#Mutlukent</span>
-        <span class="tag">#Yaşamkent</span>
-        <span class="tag">#Beysukent</span>
-        <span class="tag">#Bağlıca</span>
-        <span class="tag">#Koru Sitesi</span>
+    <div class="container" id="hizmetler">
+        <div class="section-title">
+            <h2>Neler Yıkıyoruz?</h2>
+        </div>
+        <div class="services">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1558383331-f520f2888351?auto=format&fit=crop&q=80&w=500" alt="Halı Yıkama">
+                <h3>Halı Yıkama</h3>
+                <p>Makine, El dokuma, Yün ve İpek halılarınız için özel teknikler.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1584132905271-512c958d674a?auto=format&fit=crop&q=80&w=500" alt="Koltuk Yıkama">
+                <h3>Koltuk Yıkama</h3>
+                <p>Yerinde, buharlı ve vakumlu derinlemesine koltuk temizliği.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1520004434532-668416a08753?auto=format&fit=crop&q=80&w=500" alt="Yorgan Yıkama">
+                <h3>Yorgan & Battaniye</h3>
+                <p>Endüstriyel makinelerde tam dezenfekte ve hijyenik yıkama.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="seo-box">
-        <h3>Neden Yaprak Halı Yıkama Çayyolu?</h3>
-        <p><strong>Çayyolu halı yıkama</strong> hizmetimizde en modern makineler ve sağlığa tamamen zararsız özel şampuanlar kullanıyoruz. <strong>Ümitköy</strong> ve <strong>Konutkent</strong> bölgelerinde yıllardır binlerce halıyı ilk günkü temizliğine kavuşturduk.</p>
-        <p>Halılarınız evinizden ücretsiz servisimizle alınır, tam dezenfekte edilerek ambalajlı şekilde teslim edilir. Kaliteli ve güvenilir hizmetin adresi Yaprak Halı Yıkama.</p>
+    <div class="process" id="surec">
+        <div class="section-title">
+            <h2>Yıkama Sürecimiz</h2>
+        </div>
+        <div class="steps">
+            <div class="step"><i class="fas fa-truck-loading"></i><h4>Adresten Alım</h4><p>Ücretsiz servis ile kapınızdayız.</p></div>
+            <div class="step"><i class="fas fa-water"></i><h4>Toz Alma & Yıkama</h4><p>Özel şampuanlarla derin temizlik.</p></div>
+            <div class="step"><i class="fas fa-wind"></i><h4>Kurutma</h4><p>Kapalı oda sisteminde nemden arındırma.</p></div>
+            <div class="step"><i class="fas fa-box-open"></i><h4>Paketleme & Teslim</h4><p>Pırıl pırıl ve parfümlü teslimat.</p></div>
+        </div>
     </div>
-</div>
 
-<footer>
-    <p><b>Merkez Fabrika:</b> Etimesgut / Ankara<br>
-    <span style="opacity: 0.7;">© 2026 Yaprak Halı Yıkama - Tüm Hakları Saklıdır.</span></p>
-</footer>
+    <div class="container" id="iletisim">
+        <div class="cta-box">
+            <h2>Tertemiz Halılar İçin Tek Tıkla Ulaşın</h2>
+            <p>Çayyolu, Ümitköy ve Konutkent'in en çok tercih edilen halı yıkama firmasıyız.</p>
+            
+            <div style="margin: 20px 0;">
+                <a href="tel:03122440304" class="main-btn btn-call"><i class="fas fa-phone-alt"></i> 0312 244 03 04</a>
+                <a href="https://www.instagram.com/yaprakhaliyikama06" target="_blank" class="main-btn btn-insta"><i class="fab fa-instagram"></i> Instagram'da İnceleyin</a>
+            </div>
+
+            <div class="tags">
+                <span class="tag">#ÇayyoluHalıYıkama</span> <span class="tag">#Ümitköy</span> <span class="tag">#Konutkent</span>
+                <span class="tag">#Yaşamkent</span> <span class="tag">#Mutlukent</span> <span class="tag">#Bağlıca</span>
+                <span class="tag">#Eryaman</span> <span class="tag">#Etimesgut</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Yaprak Halı Yıkama Fabrikası</strong><br>
+        Ankara'nın Tüm Bölgelerine Hizmetimiz Mevcuttur.<br>
+        0312 244 03 04 | 0536 233 36 75<br><br>
+        <span style="opacity: 0.5;">© 2026 Tüm Hakları Saklıdır.</span></p>
+    </footer>
 
 </body>
 </html>
